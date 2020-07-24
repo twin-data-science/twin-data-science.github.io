@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TwinDS</title>
-    <link>https://twin-data-science.github.io/</link>
-    <description>Recent content on TwinDS</description>
+    <title>vuejs on TwinDS</title>
+    <link>https://twin-data-science.github.io/tags/vuejs/</link>
+    <description>Recent content in vuejs on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© TwinDS</copyright>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://twin-data-science.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twin-data-science.github.io/tags/vuejs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,25 +21,6 @@
       <description>Build your first Web App for Data Visualization using Vue.js!
 In this article we&amp;rsquo;re using two modern tools for Data Visualization using Javascript:
  Vue.js - about vuejs eCharts - about echarts  Assumptions:  Minimal knowledge of Javascript; We are using free and open-source software package manager to simplify the installation of software. Here we&amp;rsquo;ll use Homebrew (macOS &amp;gt;= 10.14 or Linux). You can use other package manager for your OS or install Node and Yarn following their instructions.</description>
-    </item>
-    
-    <item>
-      <title>My first Post!</title>
-      <link>https://twin-data-science.github.io/post/first-post/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/post/first-post/</guid>
-      <description>This is my first Post!</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://twin-data-science.github.io/page/about/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/page/about/</guid>
-      <description>This blog intends to share informative articles about our Data Science work, exploring interactions with different study fields and its impacts on economy, government and policy.
-About the team Hugo Honda  Data Scientist and Technology Coordinator - Neoway Business Solutions More  Iúri Honda  PhD Economics - PUC Rio / Columbia University More  </description>
     </item>
     
   </channel>

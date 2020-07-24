@@ -5,11 +5,21 @@
     <link>https://twin-data-science.github.io/tags/</link>
     <description>Recent content in Tags on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>en</language>
+    <copyright>© TwinDS</copyright>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data-science</title>
+      <link>https://twin-data-science.github.io/tags/data-science/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data-visualization</title>
@@ -21,11 +31,29 @@
     </item>
     
     <item>
-      <title>datascience</title>
-      <link>https://twin-data-science.github.io/tags/datascience/</link>
+      <title>development</title>
+      <link>https://twin-data-science.github.io/tags/development/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/tags/datascience/</guid>
+      <guid>https://twin-data-science.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://twin-data-science.github.io/tags/javascript/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vuejs</title>
+      <link>https://twin-data-science.github.io/tags/vuejs/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/tags/vuejs/</guid>
       <description></description>
     </item>
     
