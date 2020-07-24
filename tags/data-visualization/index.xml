@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on TwinDS</title>
-    <link>https://twin-data-science.github.io/posts/</link>
-    <description>Recent content in Posts on TwinDS</description>
+    <title>data-visualization on TwinDS</title>
+    <link>https://twin-data-science.github.io/tags/data-visualization/</link>
+    <description>Recent content in data-visualization on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://twin-data-science.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twin-data-science.github.io/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://twin-data-science.github.io/posts/echarts-vuejs/</guid>
       <description>Build your first Web App for Data Visualization using Vue.js!</description>
-    </item>
-    
-    <item>
-      <title>First Post Test</title>
-      <link>https://twin-data-science.github.io/posts/first-post/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/posts/first-post/</guid>
-      <description>Testing my first post.
-Thank you!</description>
     </item>
     
   </channel>

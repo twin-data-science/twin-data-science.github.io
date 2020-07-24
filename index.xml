@@ -26,7 +26,16 @@
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/about/</guid>
-      <description>Blog intends to present informative articles about our Data Science work, to explore and share how it interacts with different fields and the impacts on technology, economy, government and policy.</description>
+      <description>This blog intends to share informative articles about our Data Science work, exploring interactions with different study fields and its impacts on economy, government and policy.</description>
+    </item>
+    
+    <item>
+      <title>Build your first Web App for Data Visualization</title>
+      <link>https://twin-data-science.github.io/posts/echarts-vuejs/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/posts/echarts-vuejs/</guid>
+      <description>Build your first Web App for Data Visualization using Vue.js!</description>
     </item>
     
     <item>

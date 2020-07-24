@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Build your first Web App for Data Visualization | 
+    TwinDS
+  
+</title><meta name="description" content="Data visualization in a Vue.js Web App using eCharts"><meta name="author" content="Hugo Honda">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://twin-data-science.github.io/posts/echarts-vuejs/"><meta property="og:title" content="Build your first Web App for Data Visualization" />
+<meta property="og:description" content="Data visualization in a Vue.js Web App using eCharts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://twin-data-science.github.io/posts/echarts-vuejs/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta itemprop="name" content="Build your first Web App for Data Visualization">
+<meta itemprop="description" content="Data visualization in a Vue.js Web App using eCharts">
+<meta itemprop="datePublished" content="2020-04-24T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-24T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="208">
+
+
+
+<meta itemprop="keywords" content="data-visualization," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build your first Web App for Data Visualization"/>
+<meta name="twitter:description" content="Data visualization in a Vue.js Web App using eCharts"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://twin-data-science.github.io">TwinDS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-3">Build your first Web App for Data Visualization</h2>
+
+                        <div class="content">
+                            <p>Build your first Web App for Data Visualization using Vue.js!</p>
+<p>In this article we&rsquo;re using two modern tools for Data Visualization using Javascript:</p>
+<ul>
+<li>Vue.js - about vuejs</li>
+<li>eCharts - about echarts</li>
+</ul>
+<h3 id="assumptions">Assumptions:</h3>
+<ul>
+<li>Minimal knowledge of Javascript;</li>
+<li>We are using free and open-source software package manager to simplify the installation of software. Here we&rsquo;ll use <a href="https://brew.sh/">Homebrew</a> (macOS &gt;= 10.14 or Linux). You can use other package manager for your OS or install <a href="https://nodejs.org/en/download/">Node</a> and <a href="https://yarnpkg.com/getting-started/install/">Yarn</a> following their instructions.</li>
+</ul>
+<h3 id="1-javascript-node--package-manager-setup">1. Javascript (Node + Package Manager) Setup:</h3>
+<ul>
+<li>
+<p>Cleanup previously installed packages. Using Homebrew:</p>
+<pre><code>brew uninstall --force yarn node npm
+brew cleanup
+brew update
+</code></pre></li>
+<li>
+<p>Install <strong><a href="https://nodejs.org/en/">Node</a></strong>. Using Homebrew:</p>
+<pre><code>brew install node
+</code></pre></li>
+</ul>
+<p><a href="https://yarnpkg.com/">Yarn</a> and <a href="https://www.npmjs.com/">NPM</a> are both Node package managers - I particularly prefer Yarn.</p>
+<ul>
+<li>Install <strong><a href="https://yarnpkg.com/">Yarn</a></strong>. Using Homebrew:
+<pre><code>npm install -g yarn
+</code></pre></li>
+</ul>
+<h3 id="2-vuejs-setup">2. Vue.js Setup</h3>
+<p>We&rsquo;re using Vue CLI to start an application quickly (the CLI assumes prior knowledge of Node.js and the associated build tools)</p>
+<ul>
+<li>Install <a href="https://cli.vuejs.org/">Vue CLI</a>:
+<pre><code>yarn global add @vue/cli
+</code></pre></li>
+</ul>
+<p>Check <a href="https://vuejs.org/">Vue.js website</a> for more info</p>
+<h3 id="3-application-setup">3. Application Setup</h3>
+<ul>
+<li>
+<p>Create an application called &ldquo;web-visualization&rdquo; using this command:</p>
+<pre><code>vue create data-visualization
+cd data-visualization
+yarn serve
+</code></pre></li>
+<li>
+<p>Installing the chart packages (<a href="https://www.echartsjs.com/en/index.html">eCharts</a> and <a href="https://github.com/ecomfe/vue-echarts">vue-echarts</a>, a wrapper for eCharts)</p>
+</li>
+</ul>
+<pre><code>yarn add echarts vue-echarts
+</code></pre><pre><code>yarn add -D pug pug-plain-loader
+yarn add -D stylus stylus-loader
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright &copy; TwinDS 2020
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
