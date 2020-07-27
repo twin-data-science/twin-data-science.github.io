@@ -13,12 +13,12 @@
 <meta name="twitter:title" content="Ferramentas para começar com Python"/>
 <meta name="twitter:description" content="Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).
-Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador."/>
+ Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando."/>
 
   <meta property="og:title" content="Ferramentas para começar com Python" />
 <meta property="og:description" content="Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).
-Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador." />
+ Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/" />
 <meta property="article:published_time" content="2020-07-02T00:00:00+00:00" />
@@ -29,10 +29,10 @@ Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de
   <meta itemprop="name" content="Ferramentas para começar com Python">
 <meta itemprop="description" content="Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).
-Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador.">
+ Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando.">
 <meta itemprop="datePublished" content="2020-07-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="743">
+<meta itemprop="wordCount" content="774">
 
 
 
@@ -127,35 +127,41 @@ Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de
           <p>Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.</p>
 <h5 id="utilize-uma-interface-para-linha-de-comando-command-line-interface">Utilize uma interface para Linha de Comando (Command Line Interface)</h5>
 <p>Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
+<blockquote>
+<p>Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando.</p>
+</blockquote>
 <h5 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h5>
-<p>Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador. Eu gosto de criar uma pastar &ldquo;Developer&rdquo; na pasta raíz do meu computador, para que eu possa trabalhar em meus códigos em um local centralizado.</p>
-<ul>
-<li>Para fazer isso no macOS / linux / Windows, abra seu terminal / prompt de comando e execute o comando: <code>cd ~/</code> para se localizar na pasta raíz e em seguida <code>$ mkdir Developer</code> para criar o novo diretório</li>
-</ul>
-<p>Este comando vai criar uma nova pasta chamada Developer (em geral lado a lado das suas pastas &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Esta pasta também vai aparecer na interface dos seus diretórios e você pode criar um atalho para na área de trabalho se quiser.</p>
-<p>Para acessar esta pasta pelo terminal, abra ele e execute: <code>$ cd Developer</code>, assim que você clicar Enter, o diretório de trabalho atual será modificado para &lsquo;Developer&rsquo; (e lá dentro você pode criar mais sub-pastas para novos projetos <code>$ mkdir new-project</code> e acessar estes novos diretórios <code>$ cd new-project</code>)</p>
+<p>Uma boa dica é manter seus diretórios (pastas) de desenvolvimento isolados das demais no seu computador. Gosto de criar um diretório &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> ~/
+</code></pre></div><p>para localizar o diretório raíz. Em seguida execute:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir Developer
+</code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outras pastas como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> Developer
+</code></pre></div><p>desta forma, o diretório de trabalho será agora &lsquo;Developer&rsquo;. Lá dentro você pode criar mais sub-pastas para novos projetos (exemplo: <code>$ mkdir new-project</code>) e acessar estes novos diretórios (exemplo: <code>$ cd new-project</code>).</p>
+<blockquote>
+<p>Obs: Para padronizar, chamarei sempre de diretório (geralmente conhecido como &lsquo;pasta&rsquo;).</p>
+</blockquote>
 <h5 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h5>
-<p>Gosto de usar <a href="https://vscodium.com/">VSCodium</a>, a versão Free/Libre Open Source Software dos binários do editor de texto da Microsoft, <a href="https://code.visualstudio.com/">VSCode</a> (o código fonte do vscode contém telemetria/rastreamento). Você também pode qualquer outro editor de texto de sua preferência (<a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, etc.)</p>
+<p>Gosto de usar <a href="https://vscodium.com/">VSCodium</a>, a versão Free/Libre Open Source Software do editor de texto da Microsoft, <a href="https://code.visualstudio.com/">VSCode</a> (o código fonte do vscode contém telemetria/rastreamento). Se não se importar, você também pode usar o VSCode ou qualquer outro editor de texto de sua preferência (<a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, etc.)</p>
 <h5 id="instale-o-python">Instale o Python</h5>
-<p>Python é uma das linguagens de programação favoritas para Ciência de Dados. Utilize as instruções <a href="https://wiki.python.org/moin/BeginnersGuide/Download">no site</a> para baixar e instalar corretamente. Utilize  Python 3.x que é versão em desenvolvimento ativo (mesmo que o Python 2.x já venha instalado na sua máquina).</p>
-<p>Você também pode utilizar o gerenciador de pacotes <a href="https://brew.sh/">Homebrew</a> (macOS / linux), para simplificar suas instalações, que simplificará várias das suas instalações. Após instalar o Homebrew, instale o Python 3 com o comando <code>$ brew install python</code>.</p>
-<p>Executar apenas <code>$ python</code> geralmente inicializará o interpretador de Python 2. Para inicializar interpretador de Python 3 utilize:</p>
-<pre><code>$ python3 --version
-$ python3
-</code></pre>
-<p>Digite <code>exit()</code> ou use o atalho Ctrl + Z no Windows e Ctrl + D no macOS / linux.</p>
-<p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência doexecutando o comando <code>$ pip3 --version</code>. Se necessário, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a>.</p>
-<p>O comando <code>$ pip</code> será para o Python 2, portanto utilize <code>$ pip3</code> para o Python 3. Ele torna torna a instalação de pacotes de software Python fácil e você já poderá instalar pacotes como o <a href="https://pandas.pydata.org/">Pandas</a> utilizando o comando: <code>$ pip3 install pandas</code>.</p>
+<p>Python é uma das linguagens de programação favoritas para Ciência de Dados. Utilize as instruções <a href="https://wiki.python.org/moin/BeginnersGuide/Download">no site oficial</a> ou um gerenciador de pacotes para baixar e instalar corretamente. Utilize  Python 3.x que é versão com suporte e em desenvolvimento ativo (mesmo que o Python 2.x já venha instalado na sua máquina).</p>
+<p>Para simplificar esta e outras instalações, recomendo utilizar o gerenciador de pacotes <a href="https://brew.sh/">Homebrew</a> (macOS / linux). Após instalação, você instalará facilmente o Python 3 executando o comando:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install python
+</code></pre></div><p>Executar o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Para verificar a instalação do interpretador de Python 3 utilize:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 --version
+</code></pre></div><p>Caso esteja instalado, executar o comando  <code>$ python3</code> , inicializará o interpretador. Digite <code>$ exit()</code> (ou utilize o atalho Ctrl + Z no Windows | Ctrl + D no macOS / linux) para finalizar a execução do interpretador.</p>
+<p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência executando o comando <code>$ pip3 --version</code>. Se necessário, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a> para gerenciar suas bibliotecas Python.</p>
+<p>Assim como o comando <code>$ python</code>, apenas <code>$ pip</code> instala pacotes Python 2, portanto utilize <code>$ pip3</code> para o Python 3. O pip torna a instalação de pacotes Python muito mais simples e organizada. Você já pode testá-lo no próximo tópico, instalando o Jupyter.</p>
 <h5 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h5>
-<p>Outra ferramenta muito utilizada para Ciência de Dados é o Jupyter Notebook. Esta ferramenta viabiliza a combinação de código executável em tempo real, textos descritivos (Markdown) e outras visualizações interativas, em um documento com a extensão &ldquo;*.ipynb&rdquo;. <a href="https://jupyter.org/install">Instale o Jupyter</a> com o comando <code>$ pip3 install jupyter</code>.</p>
-<p>JupyterLab é a interface que aprimora a experiência dos notebooks, com uma estrutura modular, permitindo abrir vários tipos de arquivos em diferentes guias na mesma janela. Oferecendo uma experiência semelhante ao IDE. Você pode <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">instalar o JupyterLab</a> utilizando o comando: <code>$ pip3 install jupyterlab</code></p>
-<p>Também é possível ter uma experiência semelhante no VSCodium, há suporte para arquivos &ldquo;*.ipynb&rdquo;, gerando uma visualização equivalente no editor de texto.</p>
+<p>Outra ferramenta muito utilizada para Ciência de Dados é o Jupyter Notebook. Esta ferramenta viabiliza a combinação de código executável em tempo real, textos descritivos (Markdown) e outras visualizações interativas, em um documento com a extensão &ldquo;*.ipynb&rdquo;. <a href="https://jupyter.org/install">Instale o Jupyter</a> com o comando:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install jupyter
+</code></pre></div><p>JupyterLab é a interface que aprimora a experiência dos notebooks, com uma estrutura modular, permitindo abrir vários tipos de arquivos em diferentes guias na mesma janela. Oferecendo uma experiência semelhante ao IDE. Você pode <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">instalar o JupyterLab</a> utilizando o comando:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install jupyterlab
+</code></pre></div><p>Também é possível ter uma experiência semelhante no VSCodium, há suporte para arquivos &ldquo;*.ipynb&rdquo;, gerando uma visualização equivalente no editor de texto.</p>
 <p>Para inicializar o Jupyter Lab, é recomendável sua inicialização dentro do seu devido projeto. Por exemplo, se estamos desenvolvendo em um diretório chamado &lsquo;my-project&rsquo;, na sua pasta Developer, você deve acessar o diretório pelo terminal com o comando <code>$ cd Developer/my-project</code> e em seguida executar <code>$ jupyter lab</code> no seu console. Para utilizar os Notebooks, copie e cole os endereços gerados na mensagem do console: http://localhost:8888/ + token.</p>
-<hr>
 <h5 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h5>
-<p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções neste <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">link</a>.</p>
+<p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções deste <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">link</a>.</p>
 <p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>). Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
-<hr>
 
         </div>
 
@@ -227,7 +233,7 @@ $ python3
   "datePublished": "2020-07-02",
   "dateModified": "2020-07-02",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-02_python-prerequisites\/",
-  "wordCount": "743",
+  "wordCount": "774",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"

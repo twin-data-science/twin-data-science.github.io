@@ -14,13 +14,13 @@
 <meta name="twitter:description" content="Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
  Para escrever um post no blog, siga os passos a seguir:
   Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts."/>
+ Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute para ter certeza que os posts estarão atualizados:  $ git pull origin master   Abra a pasta &lsquo;/content/post&rsquo; para visualizar todos os posts."/>
 
   <meta property="og:title" content="Contribuindo com o blog" />
 <meta property="og:description" content="Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
  Para escrever um post no blog, siga os passos a seguir:
   Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts." />
+ Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute para ter certeza que os posts estarão atualizados:  $ git pull origin master   Abra a pasta &lsquo;/content/post&rsquo; para visualizar todos os posts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://twin-data-science.github.io/post/20-07-01_contributing/" />
 <meta property="article:published_time" content="2020-07-01T00:00:00+00:00" />
@@ -32,10 +32,10 @@
 <meta itemprop="description" content="Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
  Para escrever um post no blog, siga os passos a seguir:
   Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts.">
+ Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute para ter certeza que os posts estarão atualizados:  $ git pull origin master   Abra a pasta &lsquo;/content/post&rsquo; para visualizar todos os posts.">
 <meta itemprop="datePublished" content="2020-07-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="227">
+<meta itemprop="wordCount" content="228">
 
 
 
@@ -128,28 +128,32 @@
 <p><strong>Atualize o repositório</strong>:</p>
 <ul>
 <li>Se for a primeira vez, clone o respositório de desenvolvimento do blog <a href="https://github.com/twin-data-science/twin-data-science.dev.git">https://github.com/twin-data-science/twin-data-science.dev.git</a></li>
-<li>Depois disso execute <code>$ git pull origin master</code> para ter certeza que você terá todos os posts atualizados</li>
+<li>Depois disso execute para ter certeza que os posts estarão atualizados:</li>
 </ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ git pull origin master
+</code></pre></div></li>
+<li>
+<p><strong>Abra a pasta</strong> &lsquo;/content/post&rsquo; para visualizar todos os posts.</p>
 </li>
 <li>
-<p><strong>Abra a pasta</strong> <code>/content/post</code> para visualizar todos os posts.</p>
-</li>
-<li>
-<p><strong>Copie o post exemplo</strong> &ldquo;example-post.md&rdquo; e cole na pasta <code>/content/post</code> e renomeie o arquivo copiado para <code>YY-MM-DD_titulo-do-post.md</code>, sendo YY-MM-DD a data (exemplo: 20-12-30 = 30 de Dezembro de 2020)</p>
+<p><strong>Inicie um novo documento:</strong></p>
+<ul>
+<li>copie o arquivo &ldquo;example-post.md&rdquo;</li>
+<li>cole na pasta &lsquo;/content/post&rsquo;</li>
+<li>renomeie o arquivo copiado para &lsquo;YY-MM-DD_titulo-do-post.md&rsquo; - YY-MM-DD descreve a data (exemplo: 20-12-30 = 30 de Dezembro de 2020)</li>
+</ul>
 </li>
 <li>
 <p><strong>Escreva seu post em Markdown</strong>. <a href="https://twin-data-science.github.io/post/20-07-26_prerequisites/">Recomendo utilizar o VSCodium</a> e sua extensão <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/vscode-installation">Markdown Preview Enhanced</a> para escrever</p>
 </li>
 <li>
 <p><strong>Atualize suas modificações no repositório</strong>:</p>
-<ul>
-<li><code>$ git add .</code></li>
-<li><code>$ git commit -m &quot;detalhe seu commit aqui&quot;</code></li>
-<li><code>$ git push origin master</code></li>
-</ul>
-</li>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ git add .
+$ git commit -m <span class="s2">&#34;detalhe seu commit aqui&#34;</span>
+$ git push origin master
+</code></pre></div></li>
 <li>
-<p><strong>Para testar o site e os posts em sua máquina</strong>, <a href="https://brew.sh/">instale o Homebrew</a>. Em seguida <a href="https://gohugo.io/getting-started/installing/">instale o gerador de sites estáticos &lsquo;Hugo&rsquo;</a> com o comando <code>$ brew install hugo</code> . Em seguida acesse a pasta onde você clonou o repositório e execute <code>$ hugo server -D</code> . O servidor Web estará disponível acessando o endereço http://localhost:1313/ em seu navegador.</p>
+<p><strong>Para testar o site e os posts em sua máquina</strong>, <a href="https://brew.sh/">instale o Homebrew</a>. Em seguida <a href="https://gohugo.io/getting-started/installing/">instale o gerador de sites estáticos &lsquo;Hugo&rsquo;</a> com o comando <code>$ brew install hugo</code> . Em seguida acesse a pasta onde você clonou o repositório e execute <code>$ hugo server -D</code> . O servidor Web estará disponível ao acessanr o endereço http://localhost:1313/ em seu navegador.</p>
 </li>
 </ol>
 <p>Pronto, Agora é só continuar escrevendo! Para atualização do site em produção, entre em contato com os autores.</p>
@@ -220,7 +224,7 @@
   "datePublished": "2020-07-01",
   "dateModified": "2020-07-01",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-01_contributing\/",
-  "wordCount": "227",
+  "wordCount": "228",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"

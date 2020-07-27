@@ -20,7 +20,7 @@
       <guid>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</guid>
       <description>Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&amp;lsquo;Command Prompt&amp;rsquo;).
-Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador.</description>
+ Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando.</description>
     </item>
     
   </channel>
