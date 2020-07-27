@@ -31,7 +31,7 @@ In this article we&amp;rsquo;re using two modern tools for Data Visualization us
       <guid>https://twin-data-science.github.io/post/20-07-26_prerequisites/</guid>
       <description>Precisamos de algumas ferramentas instaladas e funcionando na sua máquina:
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&amp;lsquo;Command Prompt&amp;rsquo;).
-Escolha um bom Editor de Texto Gosto de usar VSCodium, a versáo Free/Libre Open Source Software dos binários do editor de texto da Microsoft, VSCode (o código fonte do vscode contém telemetria/rastreamento).</description>
+Escolha um bom Editor de Texto Gosto de usar VSCodium, a versão Free/Libre Open Source Software dos binários do editor de texto da Microsoft, VSCode (o código fonte do vscode contém telemetria/rastreamento).</description>
     </item>
     
   </channel>
