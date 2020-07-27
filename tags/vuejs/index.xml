@@ -23,5 +23,16 @@ In this article we&amp;rsquo;re using two modern tools for Data Visualization us
  Vue.js - about vuejs eCharts - about echarts  Assumptions:  Minimal knowledge of Javascript; We are using free and open-source software package manager to simplify the installation of software. Here we&amp;rsquo;ll use Homebrew (macOS &amp;gt;= 10.14 or Linux). You can use other package manager for your OS or install Node and Yarn following their instructions.</description>
     </item>
     
+    <item>
+      <title>Começando com Visualização de Dados</title>
+      <link>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</guid>
+      <description>Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
+ Visualizando Dados com Python Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &amp;hellip;)
+Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.</description>
+    </item>
+    
   </channel>
 </rss>

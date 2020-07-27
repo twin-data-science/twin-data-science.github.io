@@ -8,13 +8,18 @@
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/post/20-07-26_contributing/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+    <loc>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</loc>
+    <lastmod>2020-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/post/20-07-26_prerequisites/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+    <loc>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</loc>
+    <lastmod>2020-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/post/20-07-01_contributing/</loc>
+    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/tags/python/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://twin-data-science.github.io/tags/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
@@ -80,6 +80,11 @@
   <url>
     <loc>https://twin-data-science.github.io/tags/vuejs/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/tags/python/</loc>
+    <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>

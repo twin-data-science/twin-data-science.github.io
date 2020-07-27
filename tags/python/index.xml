@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© TwinDS</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ferramentas para começar</title>
-      <link>https://twin-data-science.github.io/post/20-07-26_prerequisites/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Ferramentas para começar com Python</title>
+      <link>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/post/20-07-26_prerequisites/</guid>
+      <guid>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</guid>
       <description>Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&amp;lsquo;Command Prompt&amp;rsquo;).
-Escolha um bom Editor de Texto Gosto de usar VSCodium, a versão Free/Libre Open Source Software dos binários do editor de texto da Microsoft, VSCode (o código fonte do vscode contém telemetria/rastreamento).</description>
+Crie um diretório de desenvolvimento Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais pastas do seu computador.</description>
     </item>
     
   </channel>
