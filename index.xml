@@ -30,7 +30,8 @@ In this article we&amp;rsquo;re using two modern tools for Data Visualization us
       
       <guid>https://twin-data-science.github.io/post/20-07-26_contributing/</guid>
       <description>Para escrever um post neste blog, siga os passos a seguir:
- Atualize o repositório:  Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git (se você não tem acesso a este respositório, você não tem privilégios para contribuir) Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados   Abra a pasta /content/post para visualizar todos os posts.</description>
+  Atualize o repositório:
+ Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git (se você não tem acesso a este respositório, você não tem privilégios para contribuir) Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts.</description>
     </item>
     
     <item>
