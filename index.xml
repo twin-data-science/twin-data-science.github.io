@@ -29,18 +29,19 @@ In this article we&amp;rsquo;re using two modern tools for Data Visualization us
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/post/20-07-26_contributing/</guid>
-      <description>Para escrever um post neste blog, siga os passos a seguir:
+      <description>Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
+ Para escrever um post no blog, siga os passos a seguir:
   Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git (se você não tem acesso a este respositório, você não tem privilégios para contribuir) Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts.</description>
+ Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute $ git pull origin master para ter certeza que você terá todos os posts atualizados    Abra a pasta /content/post para visualizar todos os posts.</description>
     </item>
     
     <item>
-      <title>Ferramentas importantes para começar</title>
+      <title>Ferramentas para começar</title>
       <link>https://twin-data-science.github.io/post/20-07-26_prerequisites/</link>
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/post/20-07-26_prerequisites/</guid>
-      <description>Precisamos de algumas ferramentas instaladas e funcionando na sua máquina:
+      <description>Aqui estão descritas algumas ferramentas importantes que devem estar instaladas e funcionando na sua máquina.
 Utilize uma interface para Linha de Comando (Command Line Interface) Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&amp;lsquo;Command Prompt&amp;rsquo;).
 Escolha um bom Editor de Texto Gosto de usar VSCodium, a versão Free/Libre Open Source Software dos binários do editor de texto da Microsoft, VSCode (o código fonte do vscode contém telemetria/rastreamento).</description>
     </item>
