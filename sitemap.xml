@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://twin-data-science.github.io/post/20-07-26_build-webapp/</loc>
+    <loc>https://twin-data-science.github.io/draft/20-07-26_build-webapp/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,12 +58,12 @@
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/tags/javascript/</loc>
+    <loc>https://twin-data-science.github.io/draft/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/post/</loc>
+    <loc>https://twin-data-science.github.io/tags/javascript/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -80,6 +80,11 @@
   <url>
     <loc>https://twin-data-science.github.io/tags/vuejs/</loc>
     <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/post/</loc>
+    <lastmod>2020-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
