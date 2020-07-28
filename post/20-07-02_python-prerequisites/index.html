@@ -26,7 +26,7 @@
 <meta itemprop="description" content="Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.">
 <meta itemprop="datePublished" content="2020-07-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="933">
+<meta itemprop="wordCount" content="1060">
 
 
 
@@ -120,12 +120,12 @@
         <div class="c-post__body">
           <p>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</p>
 <p>Por estes motivos e vários outros, a maioria dos posts sobre ciência de dados deste blog serão em Python. Para executá-los, você vai precisar de algumas configurações e ferramentas importantes instaladas e funcionando na sua máquina para começarmos a desenvolver. A seguir estão descritos os primeiros passos:</p>
-<h5 id="utilize-uma-interface-para-linha-de-comando-command-line-interface">Utilize uma interface para Linha de Comando (Command Line Interface)</h5>
-<p>Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
+<h3 id="utilize-uma-interface-para-linha-de-comando">Utilize uma interface para Linha de Comando</h3>
+<p>Para desenvolver na sua máquina, você vai precisar acessar sua interface com a linha comando da sua máquina (Command Line Interface / CLI). Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
 <blockquote>
 <p>Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando.</p>
 </blockquote>
-<h5 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h5>
+<h3 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h3>
 <p>Uma boa dica é manter seus diretórios (pastas) de desenvolvimento isolados das demais no seu computador. Gosto de criar um diretório &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> ~/
 </code></pre></div><p>para localizar o diretório raíz. Em seguida execute:</p>
@@ -136,28 +136,44 @@
 <blockquote>
 <p>Obs: Para padronizar, chamarei sempre de diretório (geralmente conhecido como &lsquo;pasta&rsquo;).</p>
 </blockquote>
-<h5 id="instale-o-python">Instale o Python</h5>
+<h3 id="instale-o-python">Instale o Python</h3>
 <p>Utilize as instruções <a href="https://wiki.python.org/moin/BeginnersGuide/Download">no site oficial</a> ou um gerenciador de pacotes para baixar e instalar corretamente. Utilize  Python 3.x que é versão com suporte e em desenvolvimento ativo (mesmo que o Python 2.x já venha instalado na sua máquina).</p>
 <p>Para simplificar esta e outras instalações, recomendo utilizar o gerenciador de pacotes <a href="https://brew.sh/">Homebrew</a> (macOS / linux). Após instalação, você instalará facilmente o Python 3 executando o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install python
-</code></pre></div><p>Executar o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Para verificar a instalação do interpretador de Python 3 utilize:</p>
+</code></pre></div><blockquote>
+<p>A caixinha acima significa que estou demonstrando um comando ou trecho de código. Caso comece o símbolo &lsquo;$&rsquo;, significa que estou descrevendo um comando no terminal (caso for copiar e colar para o seu terminal, ignore o &lsquo;$ ' e copie apenas o resto).</p>
+</blockquote>
+<p>Executar o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Para verificar a instalação do interpretador de Python 3 utilize:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 --version
-</code></pre></div><p>Caso esteja instalado, executar o comando  <code>$ python3</code> , inicializará o interpretador. Digite <code>$ exit()</code> (ou utilize o atalho Ctrl + Z no Windows | Ctrl + D no macOS / linux) para finalizar a execução do interpretador.</p>
+</code></pre></div><p>Caso esteja instalado, executar o comando  <code>$ python3</code> , inicializará o interpretador. Digite &lsquo;exit()&rsquo; (ou utilize o atalho Ctrl + Z no Windows | Ctrl + D no macOS / linux) para finalizar a execução do interpretador.</p>
 <p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência executando o comando <code>$ pip3 --version</code>. Se necessário, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a> para gerenciar suas bibliotecas Python.</p>
 <p>Assim como o comando <code>$ python</code>, apenas <code>$ pip</code> instala pacotes Python 2, portanto utilize <code>$ pip3</code> para o Python 3. O pip torna a instalação de pacotes Python muito mais simples e organizada. Você já pode testá-lo no próximo tópico, instalando o Jupyter.</p>
-<h5 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h5>
+<h3 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h3>
 <p>Outra ferramenta muito utilizada para Ciência de Dados é o Jupyter Notebook. Esta ferramenta viabiliza a combinação de código executável em tempo real, textos descritivos (Markdown) e outras visualizações interativas, em um documento com a extensão &ldquo;*.ipynb&rdquo;. <a href="https://jupyter.org/install">Instale o Jupyter</a> com o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install jupyter
 </code></pre></div><p>JupyterLab é a interface que aprimora a experiência dos notebooks, com uma estrutura modular, permitindo abrir vários tipos de arquivos em diferentes guias na mesma janela. Oferecendo uma experiência semelhante ao IDE. Você pode <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">instalar o JupyterLab</a> utilizando o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install jupyterlab
 </code></pre></div><p>Para inicializar o Jupyter Lab, é recomendável sua inicialização dentro do seu devido projeto. Por exemplo, se estamos desenvolvendo em um diretório chamado &lsquo;my-project&rsquo;, na sua pasta Developer, você deve acessar o diretório pelo terminal com o comando <code>$ cd Developer/my-project</code> e em seguida executar <code>$ jupyter lab</code> no seu console.</p>
-<p>Para utilizar os Notebooks, acesse os links apresentados no console, geralmente digitando http://localhost:8888/ + token no seu navegador. Deixe seu terminal aberto para que o Jupyter funcione, caso precise, abra uma nova aba ou janela do terminal em paralelo. Para encerrar sua execução, salve seu progresso no navegador e utilize o atalho Ctrl + Z no Windows ou Ctrl + D no macOS / linux.</p>
-<h5 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h5>
+<p>Para utilizar os Notebooks, acesse os links apresentados no console, geralmente acessando o endereço &ldquo;<a href="http://localhost:8888/">http://localhost:8888/</a>&rdquo; em seu navegador. Deixe seu terminal aberto e executando sempre que estiver usando o Jupyter. Caso precise do terminal, abra uma nova aba ou janela do terminal em paralelo, interromper o terminal interromperá seu acesso ao Notebook e você pode perder alterações não salvas.</p>
+<p>Para criar um novo documento, clique em &ldquo;Notebook - Python 3&rdquo;:</p>
+<hr>
+<p><img src="/images/python-prerequisites-00.png" alt="Jupyter aberto"></p>
+<hr>
+<p>O Jupyter abrirá uma nova aba com um novo arquivo chamado &ldquo;Untitled.ipynb&rdquo;</p>
+<hr>
+<p><img src="/images/python-prerequisites-01.png" alt="Novo Notebook"></p>
+<hr>
+<p>A partir deste Notebook você pode começar a programar. Você também pode gerar documentação em <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> (texto sem programação) em células, alterando o tipo da célula:</p>
+<hr>
+<p><img src="/images/python-prerequisites-02.png" alt="Novo Notebook"></p>
+<hr>
+<p>Você pode renomear seu Notebook e salvar seu progresso (símbolo de disquete na aba aberta). Para encerrar sua execução, salve seu progresso e utilize o atalho Ctrl + Z no Windows ou Ctrl + D no macOS / linux.</p>
+<h3 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h3>
 <p>Gosto de usar <a href="https://vscodium.com/">VSCodium</a>, a versão Free/Libre Open Source Software do editor de texto da Microsoft, <a href="https://code.visualstudio.com/">VSCode</a> (o código fonte do vscode contém telemetria/rastreamento). Se não se importar, você também pode usar o VSCode ou qualquer outro editor de texto de sua preferência (<a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, etc.)
 Se você tiver o Homebrew instalado, execute:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew cask install vscodium
 </code></pre></div><p>Também é possível ter uma experiência semelhante ao Jupyer no VSCodium / VSCode, já que há suporte para arquivos &ldquo;*.ipynb&rdquo; e que gera uma visualização de Notebook no editor de texto.</p>
-<h5 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h5>
+<h3 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h3>
 <p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções deste <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">link</a>.</p>
 <p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>). Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
 
@@ -231,7 +247,7 @@ Se você tiver o Homebrew instalado, execute:</p>
   "datePublished": "2020-07-02",
   "dateModified": "2020-07-02",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-02_python-prerequisites\/",
-  "wordCount": "933",
+  "wordCount": "1060",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"

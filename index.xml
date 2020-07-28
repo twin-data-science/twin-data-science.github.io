@@ -31,7 +31,7 @@ In this article we&amp;rsquo;re using two modern tools for Data Visualization us
       <guid>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</guid>
       <description>Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
  A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &amp;hellip;)
-Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:
+Podemos mostrar o propósito da visualização de dados com o exemplo:
  mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.</description>
     </item>
     

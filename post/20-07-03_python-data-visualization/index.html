@@ -13,13 +13,13 @@
 <meta name="twitter:title" content="Visualizando Dados [Python]"/>
 <meta name="twitter:description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
  A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:
+Podemos mostrar o propósito da visualização de dados com o exemplo:
  mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados."/>
 
   <meta property="og:title" content="Visualizando Dados [Python]" />
 <meta property="og:description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
  A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:
+Podemos mostrar o propósito da visualização de dados com o exemplo:
  mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://twin-data-science.github.io/post/20-07-03_python-data-visualization/" />
@@ -31,11 +31,11 @@ Podemos exemplificar o propósito da visualização de dados partir das seguinte
   <meta itemprop="name" content="Visualizando Dados [Python]">
 <meta itemprop="description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
  A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:
+Podemos mostrar o propósito da visualização de dados com o exemplo:
  mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.">
 <meta itemprop="datePublished" content="2020-07-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="345">
+<meta itemprop="wordCount" content="364">
 
 
 
@@ -136,28 +136,31 @@ Podemos exemplificar o propósito da visualização de dados partir das seguinte
 Dê uma olhada <a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">neste post *</a> sobre ferramentas para começar com Python</p>
 </blockquote>
 <p>A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (<a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a>, <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas Visualization</a> &hellip;)</p>
-<p>Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:</p>
+<p>Podemos mostrar o propósito da visualização de dados com o exemplo:</p>
 <ul>
 <li>mostrar conjunto de dados cru</li>
 <li>mostrar gráfico plotado</li>
 </ul>
 <p>Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados. Futuramente, falaremos de forma interativas de plotar gráficos, como acontece com o <a href="https://plotly.com/python/">Plotly</a>, que é baseado em <a href="https://d3js.org/">D3</a> e também pode ser utilizado em JavaScript.</p>
-<h5 id="1-instale-a-biblioteca-matplotlib">1. Instale a biblioteca Matplotlib:</h5>
+<p>Também utilizaremos o <a href="https://pandas.pydata.org/">pandas</a>, a biblioteca mais popular em Python para análise de dados, para auxiliar na leitura e manejo dos dados.</p>
+<h5 id="1-instale-as-bibliotecas">1. Instale as bibliotecas:</h5>
 <p>Abra seu terminal e instale as bibliotecas que precisaremos utilizar:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install matplotlib
+$ pip3 install pandas
 </code></pre></div><h5 id="2-crie-um-novo-diretório">2. Crie um novo diretório:</h5>
-<p>Ainda pelo seu terminal, crie um novo projeto e acesse-o (como <a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">recomendado*</a>, crie e acesse antes seu diretório para desenvolvimento):</p>
+<p>Ainda pelo seu terminal, crie um novo projeto e acesse-o (como já recomendado<a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">*</a>, crie e acesse um diretório central para desenvolvimento):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir python-datavis
 $ <span class="nb">cd</span> python-datavis
 </code></pre></div><h5 id="3-inicialize-o-jupyter-lab">3. Inicialize o Jupyter Lab</h5>
 <p>Em seguida, inicialize o Jupyter com o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ jupyter lab
-</code></pre></div><p>Deixe a aba do terminal executando aberta enquanto estiver utilizando o Notebook - interromper o terminal interromperá seu acesso.</p>
-<p>Na primeira célula do seu Notebook, importe a biblioteca Matplotlib <code>import matplotlib.pyplot as plt</code> . Logo abaixo da importação, digite o comando <code>%matplotlib inline</code>, que permite a ploatagem de imagens estáticas incorporadas no seu Notebook</p>
+</code></pre></div><p>Na primeira célula do seu Notebook, importe a biblioteca Matplotlib <code>import matplotlib.pyplot as plt</code> . Logo abaixo da importação, digite o comando <code>%matplotlib inline</code>, que permite a plotagem de imagens estáticas incorporadas no seu Notebook</p>
 <p>A primeira célula do seu Notebook deve estar assim:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-</code></pre></div><h5 id="3-importando-os-dados">3. Importando os dados:</h5>
+<hr>
+<p><img src="/images/python-datavisualization-02.png" alt="Célula Notebook"></p>
+<hr>
+<p>Aperte Shift + Enter para executar a célula. Se você não receber nenhuma mensagem, significa que deu tudo certo.</p>
+<h5 id="3-importando-os-dados">3. Importando os dados:</h5>
 <h5 id="4-criando-gráficos">4. Criando Gráficos:</h5>
 <ul>
 <li>
@@ -280,7 +283,7 @@ $ <span class="nb">cd</span> python-datavis
   "datePublished": "2020-07-03",
   "dateModified": "2020-07-03",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-03_python-data-visualization\/",
-  "wordCount": "345",
+  "wordCount": "364",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"
