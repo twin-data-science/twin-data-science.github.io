@@ -12,15 +12,13 @@
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Visualizando Dados [Python]"/>
 <meta name="twitter:description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
- A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos mostrar o propósito da visualização de dados com o exemplo:
- mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados."/>
+ A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (pandas Visualization, Matplotlib, Seaborn &hellip;)
+Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:"/>
 
   <meta property="og:title" content="Visualizando Dados [Python]" />
 <meta property="og:description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
- A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos mostrar o propósito da visualização de dados com o exemplo:
- mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados." />
+ A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (pandas Visualization, Matplotlib, Seaborn &hellip;)
+Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://twin-data-science.github.io/post/20-07-03_python-data-visualization/" />
 <meta property="article:published_time" content="2020-07-03T00:00:00+00:00" />
@@ -30,12 +28,11 @@ Podemos mostrar o propósito da visualização de dados com o exemplo:
   
   <meta itemprop="name" content="Visualizando Dados [Python]">
 <meta itemprop="description" content="Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
- A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &hellip;)
-Podemos mostrar o propósito da visualização de dados com o exemplo:
- mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.">
+ A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (pandas Visualization, Matplotlib, Seaborn &hellip;)
+Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:">
 <meta itemprop="datePublished" content="2020-07-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="364">
+<meta itemprop="wordCount" content="488">
 
 
 
@@ -135,32 +132,28 @@ Podemos mostrar o propósito da visualização de dados com o exemplo:
 <p><strong>Premissas para este post</strong>:
 Dê uma olhada <a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">neste post *</a> sobre ferramentas para começar com Python</p>
 </blockquote>
-<p>A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (<a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a>, <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas Visualization</a> &hellip;)</p>
-<p>Podemos mostrar o propósito da visualização de dados com o exemplo:</p>
-<ul>
-<li>mostrar conjunto de dados cru</li>
-<li>mostrar gráfico plotado</li>
-</ul>
-<p>Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados. Futuramente, falaremos de forma interativas de plotar gráficos, como acontece com o <a href="https://plotly.com/python/">Plotly</a>, que é baseado em <a href="https://d3js.org/">D3</a> e também pode ser utilizado em JavaScript.</p>
-<p>Também utilizaremos o <a href="https://pandas.pydata.org/">pandas</a>, a biblioteca mais popular em Python para análise de dados, para auxiliar na leitura e manejo dos dados.</p>
+<p>A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">pandas Visualization</a>, <a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a> &hellip;)</p>
+<p>Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:</p>
+<hr>
+<p><img src="/images/python-datavis-00.png" alt="Célula Notebook"></p>
+<hr>
+<p>Certamente você consegue entender alguns trechos escritos, mas dificilmente conseguirá tirar insights claros de dados apresentados neste formato. Esta é a importância da capacidade de traduzir documentos de texto em imagens que representem algo mais palpável.</p>
+<p>Neste post, vamos começar utilizando o <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">pandas Visualization</a> que é baseado no <a href="https://pandas.pydata.org/">pandas</a>, a biblioteca mais popular em Python para análise de dados. Futuramente, falaremos de forma interativas de plotar gráficos, é possível ser feito no <a href="https://plotly.com/python/">Plotly</a>, é baseado em <a href="https://d3js.org/">D3</a> e que também pode ser utilizado em JavaScript.</p>
 <h5 id="1-instale-as-bibliotecas">1. Instale as bibliotecas:</h5>
 <p>Abra seu terminal e instale as bibliotecas que precisaremos utilizar:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install matplotlib
-$ pip3 install pandas
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install pandas
 </code></pre></div><h5 id="2-crie-um-novo-diretório">2. Crie um novo diretório:</h5>
-<p>Ainda pelo seu terminal, crie um novo projeto e acesse-o (como já recomendado<a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">*</a>, crie e acesse um diretório central para desenvolvimento):</p>
+<p>Ainda pelo seu terminal, crie um novo projeto e acesse-o (como já recomendado<a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">*</a>, crie e acesse antes seu diretório de desenvolvimento):</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir python-datavis
 $ <span class="nb">cd</span> python-datavis
 </code></pre></div><h5 id="3-inicialize-o-jupyter-lab">3. Inicialize o Jupyter Lab</h5>
 <p>Em seguida, inicialize o Jupyter com o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ jupyter lab
-</code></pre></div><p>Na primeira célula do seu Notebook, importe a biblioteca Matplotlib <code>import matplotlib.pyplot as plt</code> . Logo abaixo da importação, digite o comando <code>%matplotlib inline</code>, que permite a plotagem de imagens estáticas incorporadas no seu Notebook</p>
-<p>A primeira célula do seu Notebook deve estar assim:</p>
-<hr>
-<p><img src="/images/python-datavisualization-02.png" alt="Célula Notebook"></p>
-<hr>
-<p>Aperte Shift + Enter para executar a célula. Se você não receber nenhuma mensagem, significa que deu tudo certo.</p>
+</code></pre></div><p>Renomeie seu Notebook para &lsquo;datavis&rsquo; ou outro nome que preferir. Na primeira célula do seu Notebook, importe a biblioteca: <code>import pandas as pd</code> . Quando importamos uma biblioteca, o <code>as pd</code> significam que poderemos utilizar aquela biblioteca utilizando um &ldquo;apelido&rdquo; para ela, chamaremos apenas &lsquo;pd&rsquo; invés de utilizar &lsquo;pandas&rsquo; toda vez. Pode parecer bobeira, mas economiza tempo de digitação e espaço no código.</p>
+<p>Aperte Shift + Enter para executar a célula. Se você não receber nenhuma mensagem, significa que deu tudo certo. Se você receber uma mensagem como &ldquo;ModuleNotFoundError: No module named &hellip;&rdquo;, signfica que um dos pacotes não foi instalado e você deve revisar o passo 1.</p>
 <h5 id="3-importando-os-dados">3. Importando os dados:</h5>
+<p>Vamos utilizar um conjunto de dados de séries e filmes disponíveis na Netflix a partir de 2019 (obtido no <a href="https://www.kaggle.com/shivamb/netflix-shows/data">Kaggle</a>). Você pode utilizar seu próprio conjunto de dados se preferir.</p>
+<p>Para reprodutibilidade, <a href="https://raw.githubusercontent.com/twin-data-science/twin-data-science_resources/master/python-datavis/netflix_titles.csv">baixe este CSV</a> (abra o link e salve o arquivo &lsquo;netflix_titles.csv&rsquo; no mesmo diretório que seu Notebook) para utilizarmos uma versão unificada.</p>
 <h5 id="4-criando-gráficos">4. Criando Gráficos:</h5>
 <ul>
 <li>
@@ -188,7 +181,12 @@ $ <span class="nb">cd</span> python-datavis
 </ul>
 <p>Referências:</p>
 <ul>
-<li><a href="https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips">https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips</a></li>
+<li>
+<p><a href="https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips">https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips</a></p>
+</li>
+<li>
+<p><a href="https://www.kaggle.com/shivamb/netflix-shows/data">https://www.kaggle.com/shivamb/netflix-shows/data</a></p>
+</li>
 </ul>
 
         </div>
@@ -283,7 +281,7 @@ $ <span class="nb">cd</span> python-datavis
   "datePublished": "2020-07-03",
   "dateModified": "2020-07-03",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-03_python-data-visualization\/",
-  "wordCount": "364",
+  "wordCount": "488",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"

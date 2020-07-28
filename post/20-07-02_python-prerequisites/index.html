@@ -126,9 +126,12 @@
 <p>Obs: Para padronizar, chamarei sempre de Terminal, que é a mesma coisa que Linha de Comando / Console / Prompt de Comando.</p>
 </blockquote>
 <h3 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h3>
-<p>Uma boa dica é manter seus diretórios (pastas) de desenvolvimento isolados das demais no seu computador. Gosto de criar um diretório &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando:</p>
+<p>Uma boa dica é manter seus diretórios (pastas) de desenvolvimento isolados das demais no seu computador. Gosto de criar um diretório &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando para localizar o diretório raíz:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> ~/
-</code></pre></div><p>para localizar o diretório raíz. Em seguida execute:</p>
+</code></pre></div><blockquote>
+<p>A caixinha acima significa que estou demonstrando um comando ou trecho de código. Caso comece o símbolo &lsquo;$&rsquo;, significa que estou descrevendo um comando no terminal (caso for copiar e colar para o seu terminal, ignore o &lsquo;$ ' e copie apenas o resto).</p>
+</blockquote>
+<p>Em seguida execute:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir Developer
 </code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outras pastas como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> Developer
@@ -140,10 +143,7 @@
 <p>Utilize as instruções <a href="https://wiki.python.org/moin/BeginnersGuide/Download">no site oficial</a> ou um gerenciador de pacotes para baixar e instalar corretamente. Utilize  Python 3.x que é versão com suporte e em desenvolvimento ativo (mesmo que o Python 2.x já venha instalado na sua máquina).</p>
 <p>Para simplificar esta e outras instalações, recomendo utilizar o gerenciador de pacotes <a href="https://brew.sh/">Homebrew</a> (macOS / linux). Após instalação, você instalará facilmente o Python 3 executando o comando:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install python
-</code></pre></div><blockquote>
-<p>A caixinha acima significa que estou demonstrando um comando ou trecho de código. Caso comece o símbolo &lsquo;$&rsquo;, significa que estou descrevendo um comando no terminal (caso for copiar e colar para o seu terminal, ignore o &lsquo;$ ' e copie apenas o resto).</p>
-</blockquote>
-<p>Executar o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Para verificar a instalação do interpretador de Python 3 utilize:</p>
+</code></pre></div><p>Executar o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Para verificar a instalação do interpretador de Python 3 utilize:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 --version
 </code></pre></div><p>Caso esteja instalado, executar o comando  <code>$ python3</code> , inicializará o interpretador. Digite &lsquo;exit()&rsquo; (ou utilize o atalho Ctrl + Z no Windows | Ctrl + D no macOS / linux) para finalizar a execução do interpretador.</p>
 <p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência executando o comando <code>$ pip3 --version</code>. Se necessário, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a> para gerenciar suas bibliotecas Python.</p>
