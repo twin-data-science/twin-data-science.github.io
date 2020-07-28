@@ -35,11 +35,11 @@ Podemos exemplificar o propósito da visualização de dados partir das seguinte
  mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.">
 <meta itemprop="datePublished" content="2020-07-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="156">
+<meta itemprop="wordCount" content="345">
 
 
 
-<meta itemprop="keywords" content="development,data-science,data-visualization,javascript,vuejs," />
+<meta itemprop="keywords" content="development,data-science,data-visualization,python," />
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" rel="stylesheet">
   <link href="https://twin-data-science.github.io/css/application.css" rel="stylesheet">
@@ -123,9 +123,7 @@ Podemos exemplificar o propósito da visualização de dados partir das seguinte
               
               <a class="c-tag__item c-link" href="/tags/data-visualization">data-visualization</a>
               
-              <a class="c-tag__item c-link" href="/tags/javascript">javascript</a>
-              
-              <a class="c-tag__item c-link" href="/tags/vuejs">vuejs</a>
+              <a class="c-tag__item c-link" href="/tags/python">python</a>
               
             </div>
             
@@ -135,7 +133,7 @@ Podemos exemplificar o propósito da visualização de dados partir das seguinte
         <div class="c-post__body">
           <blockquote>
 <p><strong>Premissas para este post</strong>:
-Dê uma olhada <a href="https://twin-data-science.github.io/post/20-07-02_prerequisites/">neste post *</a> sobre ferramentas para começar com Python</p>
+Dê uma olhada <a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">neste post *</a> sobre ferramentas para começar com Python</p>
 </blockquote>
 <p>A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (<a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a>, <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas Visualization</a> &hellip;)</p>
 <p>Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:</p>
@@ -144,17 +142,50 @@ Dê uma olhada <a href="https://twin-data-science.github.io/post/20-07-02_prereq
 <li>mostrar gráfico plotado</li>
 </ul>
 <p>Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados. Futuramente, falaremos de forma interativas de plotar gráficos, como acontece com o <a href="https://plotly.com/python/">Plotly</a>, que é baseado em <a href="https://d3js.org/">D3</a> e também pode ser utilizado em JavaScript.</p>
-<h5 id="1-inicialize-o-jupyter-lab">1. Inicialize o Jupyter Lab</h5>
-<p>Acesse o seu diretório de desenvolvimento e inicialize o Jupyter:</p>
-<pre><code>$ jupyter lab
-</code></pre>
-<h5 id="2-instale-a-biblioteca-matplotlib">2. Instale a biblioteca Matplotlib:</h5>
-<pre><code>$ pip3 install matplotlib
-</code></pre>
-<h5 id="3-criando-gráficos">3. Criando Gráficos:</h5>
+<h5 id="1-instale-a-biblioteca-matplotlib">1. Instale a biblioteca Matplotlib:</h5>
+<p>Abra seu terminal e instale as bibliotecas que precisaremos utilizar:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install matplotlib
+</code></pre></div><h5 id="2-crie-um-novo-diretório">2. Crie um novo diretório:</h5>
+<p>Ainda pelo seu terminal, crie um novo projeto e acesse-o (como <a href="https://twin-data-science.github.io/post/20-07-02_python-prerequisites/">recomendado*</a>, crie e acesse antes seu diretório para desenvolvimento):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir python-datavis
+$ <span class="nb">cd</span> python-datavis
+</code></pre></div><h5 id="3-inicialize-o-jupyter-lab">3. Inicialize o Jupyter Lab</h5>
+<p>Em seguida, inicialize o Jupyter com o comando:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ jupyter lab
+</code></pre></div><p>Deixe a aba do terminal executando aberta enquanto estiver utilizando o Notebook - interromper o terminal interromperá seu acesso.</p>
+<p>Na primeira célula do seu Notebook, importe a biblioteca Matplotlib <code>import matplotlib.pyplot as plt</code> . Logo abaixo da importação, digite o comando <code>%matplotlib inline</code>, que permite a ploatagem de imagens estáticas incorporadas no seu Notebook</p>
+<p>A primeira célula do seu Notebook deve estar assim:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div><h5 id="3-importando-os-dados">3. Importando os dados:</h5>
+<h5 id="4-criando-gráficos">4. Criando Gráficos:</h5>
 <ul>
-<li><strong>Scatter Plot (Gráfico de Dispersão)</strong>:
-Vamos utilizar o método scatter da biblioteca.</li>
+<li>
+<p><strong>Distribuições de variável única</strong></p>
+<ul>
+<li>
+<p><strong>Histograma</strong> - criamos a partir do método &ldquo;hist&rdquo; Se passarmos dados categóricos, como a coluna X dos nossos dados, ele calculará automaticamente com que frequência cada categoria ocorre:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="c1"># plot histogram</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">wine_reviews</span><span class="p">[</span><span class="s1">&#39;points&#39;</span><span class="p">])</span>
+<span class="c1"># set title and labels</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Wine Review Scores&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Points&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+</code></pre></div></li>
+<li>
+<p><strong>Box Plot</strong>:</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Scatter Plot (Gráfico de Dispersão)</strong>:</p>
+<p>Vamos utilizar o método scatter da biblioteca. O Scatter Plot nos permite ver a evolução de uma variável ao longo do tempo ou a relação entre duas (ou mais) variáveis.</p>
+</li>
+</ul>
+<p>Referências:</p>
+<ul>
+<li><a href="https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips">https://www.kaggle.com/subinium/simple-matplotlib-visualization-tips</a></li>
 </ul>
 
         </div>
@@ -249,7 +280,7 @@ Vamos utilizar o método scatter da biblioteca.</li>
   "datePublished": "2020-07-03",
   "dateModified": "2020-07-03",
   "url": "https:\/\/twin-data-science.github.io\/post\/20-07-03_python-data-visualization\/",
-  "wordCount": "156",
+  "wordCount": "345",
   "author": {
     "@type": "Person",
     "name": "Hugo Honda"
@@ -259,8 +290,8 @@ Vamos utilizar o método scatter da biblioteca.</li>
     "name": "Hugo Honda"
   },
   "image": "",
-  "genre": "DevelopmentData Visualization",
-  "keywords": "developmentdata-sciencedata-visualizationjavascriptvuejs",
+  "genre": "DevelopmentData ScienceData Visualization",
+  "keywords": "developmentdata-sciencedata-visualizationpython",
   "description": ""
 }
 </script>

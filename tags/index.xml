@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© TwinDS</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>data-science</title>
       <link>https://twin-data-science.github.io/tags/data-science/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/data-science/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>data-visualization</title>
       <link>https://twin-data-science.github.io/tags/data-visualization/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/data-visualization/</guid>
       <description></description>
@@ -33,34 +33,16 @@
     <item>
       <title>development</title>
       <link>https://twin-data-science.github.io/tags/development/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>javascript</title>
-      <link>https://twin-data-science.github.io/tags/javascript/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vuejs</title>
-      <link>https://twin-data-science.github.io/tags/vuejs/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/tags/vuejs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>python</title>
       <link>https://twin-data-science.github.io/tags/python/</link>
-      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/python/</guid>
       <description></description>

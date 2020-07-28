@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© TwinDS</copyright>
-    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visualizando Dados [Python]</title>
+      <link>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</guid>
+      <description>Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
+ A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (Matplotlib, Seaborn, Pandas Visualization &amp;hellip;)
+Podemos exemplificar o propósito da visualização de dados partir das seguintes imagens:
+ mostrar conjunto de dados cru mostrar gráfico plotado  Neste post, vamos começar utilizando o Matplotlib que é uma das ferramentas de visualização de dados mais utilizadas por cientistas de dados.</description>
+    </item>
     
     <item>
       <title>Ajeitando sua máquina [Python]</title>
