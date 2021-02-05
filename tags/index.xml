@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TwinDS</title>
-    <link>https://www.example.com/tags/</link>
+    <link>https://twin-data-science.github.io/tags/</link>
     <description>Recent content in Tags on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>pt-br</language>
     <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twin-data-science.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://www.example.com/tags/development/</link>
+      <link>https://twin-data-science.github.io/tags/development/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.example.com/tags/development/</guid>
+      <guid>https://twin-data-science.github.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://www.example.com/tags/python/</link>
+      <link>https://twin-data-science.github.io/tags/python/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.example.com/tags/python/</guid>
+      <guid>https://twin-data-science.github.io/tags/python/</guid>
       <description></description>
     </item>
     
