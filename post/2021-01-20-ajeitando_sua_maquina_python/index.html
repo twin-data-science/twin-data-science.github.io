@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Ajeitando sua máquina - Python &middot; TwinDS</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://twin-data-science.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://twin-data-science.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://twin-data-science.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://twin-data-science.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://twin-data-science.github.io/">TwinDS</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/post/">Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/contact/">Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/hugohonda" rel="me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ajeitando sua máquina - Python</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>January 2021</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/development">Development</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/python">Python</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</p>
+<p>Por estes motivos e vários outros, a maioria dos posts sobre ciência de dados deste blog serão em Python. Para executá-los, você vai precisar de algumas configurações e ferramentas importantes instaladas e funcionando na sua máquina para começarmos a desenvolver. A seguir estão descritos os primeiros passos:</p>
+<h3 id="utilize-uma-interface-para-linha-de-comando">Utilize uma interface para Linha de Comando</h3>
+<p>Para desenvolver em Python (ou qualquer outra linguagem), você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
+<blockquote>
+<p>Obs: Para padronizar, chamarei sempre de Terminal. Você também poderá encontrar escrito como: Interface de Linha de Comando; Command Line Interface (CLI); Console; Prompt de Comando.</p>
+</blockquote>
+<h3 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h3>
+<p>Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais no seu computador. Gosto de criar uma pasta chamada &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando para localizar o diretório raíz:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd ~/
+</code></pre></div><blockquote>
+<p>A caixinha acima significa que estou demonstrando um comando ou trecho de código. Caso comece o símbolo &lsquo;$&rsquo;, significa que estou descrevendo um comando no terminal (caso for copiar e colar para o seu terminal, ignore o &lsquo;$ ' e copie apenas o resto).</p>
+</blockquote>
+<p>Em seguida execute:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir Developer
+</code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outras pastas como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd Developer
+</code></pre></div><p>desta forma, o diretório de trabalho será agora &lsquo;Developer&rsquo;. Lá dentro você pode criar mais sub-pastas para novos projetos (exemplo: <code>$ mkdir new-project</code>) e acessar estes novos diretórios (exemplo: <code>$ cd new-project</code>).</p>
+<blockquote>
+<p>Obs: Para padronizar, tentarei chamar de diretório (conhecido popularmente como &lsquo;pasta&rsquo;).</p>
+</blockquote>
+<h3 id="instale-o-python">Instale o Python</h3>
+<p>Execute o seguinte comando para verificar se você já tem Python 3 instalado na sua máquina:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ python3 --version
+</code></pre></div><p>Se não estiver instalado, utilize as instruções retornadas pelo comando acima ou siga as instruções do <a href="https://wiki.python.org/moin/BeginnersGuide/Download">site oficial</a>. Use o Python 3.x, que é a versão com suporte e em desenvolvimento ativos (por mais que o Python 2.x possa vir na sua máquina).</p>
+<p>Para simplificar esta e outras instalações, você também pode utilizar um gerenciador de pacotes, como o nativo do linux (<a href="https://help.ubuntu.com/community/AptGet/Howto">apt</a> ou similar) ou o <a href="https://brew.sh/">Homebrew</a> (também disponível no macOS). Após instalação, você instalará facilmente o Python 3 executando o comando: <code>$ brew install python</code></p>
+<p>Executar apenas o comando  <code>$ python</code>  geralmente inicializa o interpretador de Python 2. Executar o comando  <code>$ python3</code> , inicializará o interpretador correto. Digite &lsquo;exit()&rsquo; (ou utilize o atalho Ctrl + Z no Windows | Ctrl + D no macOS / linux) para finalizar a execução do interpretador.</p>
+<p>Os pacotes (e bibliotecas) Python, são um conjunto de funções úteis &ldquo;empacotados&rdquo;, sendo que cada pacote terá sua finalidade particular. Ao importar um pacote, você terá acesso às respectivas funções que alguém já implementou por nós. Por exemplo, posso utilizar um pacote de visualização (como o <a href="https://matplotlib.org/index.html">Matplotlib</a>) para não ter que reescrever do zero todas as funções de plotagem de gráficos, conseguindo assim apresentar um gráfico de pizza chamando uma simples função.</p>
+<p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência executando o comando <code>$ pip3 --version</code>. Caso não esteja instalado, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a> para gerenciar suas bibliotecas Python.</p>
+<p>Assim como o comando <code>$ python</code>, apenas <code>$ pip</code> instala pacotes Python 2, portanto utilize <code>$ pip3</code> para o Python 3. O pip torna a instalação de pacotes Python muito mais simples e organizada. Você já pode testá-lo no próximo tópico, instalando o Jupyter.</p>
+<h3 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h3>
+<p>Outra ferramenta muito utilizada para Ciência de Dados é o Jupyter Notebook. Esta ferramenta viabiliza a combinação de código executável em tempo real, textos descritivos (Markdown) e outras visualizações interativas, em um documento com a extensão &ldquo;*.ipynb&rdquo;. <a href="https://jupyter.org/install">Instale o Jupyter</a> com o comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip3 install jupyter
+</code></pre></div><p>JupyterLab é a interface que aprimora a experiência dos notebooks, com uma estrutura modular, permitindo abrir vários tipos de arquivos em diferentes guias na mesma janela. Oferecendo uma experiência semelhante ao IDE. Você pode <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">instalar o JupyterLab</a> utilizando o comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip3 install jupyterlab
+</code></pre></div><p>Para inicializar o Jupyter Lab, é recomendável sua inicialização dentro do seu devido projeto. Por exemplo, se estamos desenvolvendo em um diretório chamado &lsquo;my-project&rsquo;, na sua pasta Developer, você deve acessar o diretório pelo terminal com o comando <code>$ cd Developer/my-project</code> e em seguida executar <code>$ jupyter lab</code> no seu console.</p>
+<p>Para utilizar os Notebooks, acesse os links apresentados no console, geralmente acessando o endereço &ldquo;<a href="http://localhost:8888/">http://localhost:8888/</a>&rdquo; em seu navegador. Deixe seu terminal aberto e executando sempre que estiver usando o Jupyter. Caso precise do terminal, abra uma nova aba ou janela do terminal em paralelo, interromper o terminal interromperá seu acesso ao Notebook e você pode perder alterações não salvas.</p>
+<p>Para criar um novo documento, clique em &ldquo;Notebook - Python 3&rdquo;:
+O Jupyter abrirá uma nova aba com um novo arquivo chamado &ldquo;Untitled.ipynb&rdquo;
+A partir deste Notebook você pode começar a programar. Você também pode gerar documentação em <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> (texto sem programação) em células, alterando o tipo da célula.
+Você pode renomear seu Notebook e salvar seu progresso (símbolo de disquete na aba aberta). Para encerrar sua execução, salve seu progresso e utilize o atalho Ctrl + Z no Windows ou Ctrl + D no macOS / linux.</p>
+<h3 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h3>
+<p>Gosto de usar <a href="https://vscodium.com/">VSCodium</a>, a versão Free/Libre Open Source Software do editor de texto da Microsoft, <a href="https://code.visualstudio.com/">VSCode</a> (o código fonte do vscode contém telemetria/rastreamento). Se não se importar, você também pode usar o VSCode ou qualquer outro editor de texto de sua preferência (<a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, etc.)
+Se você tiver o Homebrew instalado, execute:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew cask install vscodium
+</code></pre></div><p>Também é possível ter uma experiência semelhante ao Jupyer no VSCodium / VSCode, já que há suporte para arquivos &ldquo;*.ipynb&rdquo; e que gera uma visualização de Notebook no editor de texto.</p>
+<h3 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h3>
+<p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções deste <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">link</a>.</p>
+<p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>). Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/">Ajeitando sua máquina - Python</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://twin-data-science.github.io/js/ui.js"></script>
+<script src="https://twin-data-science.github.io/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://twin-data-science.github.io/js/math-code.js"></script>
+  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>
+
