@@ -6,10 +6,20 @@
     <description>Recent content in Posts on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introdução ao Apreçamento de Ativos</title>
+      <link>https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/</guid>
+      <description>$$ \sum_{i=1}^{N} a_i $$
+Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
+    </item>
     
     <item>
       <title>Ajeitando sua máquina - Python</title>
@@ -18,16 +28,6 @@
       
       <guid>https://twin-data-science.github.io/post/2021-01-20-ajeitando_sua_maquina_python/</guid>
       <description>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
-    </item>
-    
-    <item>
-      <title>Ajeitando sua máquina - Python</title>
-      <link>https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/</link>
-      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/</guid>
-      <description>$$ \sum_{i=1}^{N} a_i $$
-Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
     </item>
     
   </channel>
