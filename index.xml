@@ -2,65 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TwinDS</title>
-    <link>https://twin-data-science.github.io/</link>
+    <link>https://www.example.com/</link>
     <description>Recent content on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© TwinDS</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://twin-data-science.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.example.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Build your first Web App for Data Visualization</title>
-      <link>https://twin-data-science.github.io/draft/20-07-26_build-webapp/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/draft/20-07-26_build-webapp/</guid>
-      <description>Build your first Web App for Data Visualization using Vue.js!
-In this article we&amp;rsquo;re using two modern tools for Data Visualization using Javascript:
- Vue.js - about vuejs eCharts - about echarts  Assumptions:  Minimal knowledge of Javascript; We are using free and open-source software package manager to simplify the installation of software. Here we&amp;rsquo;ll use Homebrew (macOS &amp;gt;= 10.14 or Linux). You can use other package manager for your OS or install Node and Yarn following their instructions.</description>
-    </item>
     
     <item>
-      <title>Visualizando Dados [Python]</title>
-      <link>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</guid>
-      <description>Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
- A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (pandas Visualization, Matplotlib, Seaborn &amp;hellip;)
-Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:</description>
-    </item>
-    
-    <item>
-      <title>Ajeitando sua máquina [Python]</title>
-      <link>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</link>
+      <title>Ajeitando sua máquina - Python</title>
+      <link>https://www.example.com/post/21-01-20-prerequisites-python/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</guid>
-      <description>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
+      <guid>https://www.example.com/post/21-01-20-prerequisites-python/</guid>
+      <description>$$ \sum_{i=1}^{N} a_i $$
+Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
     </item>
     
     <item>
-      <title>Contribuindo com o blog</title>
-      <link>https://twin-data-science.github.io/post/20-07-01_contributing/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Contact</title>
+      <link>https://www.example.com/contact/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/post/20-07-01_contributing/</guid>
-      <description>Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
- Para escrever um post no blog, siga os passos a seguir:
-  Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute para ter certeza que os posts estarão atualizados:  $ git pull origin master   Abra a pasta &amp;lsquo;/content/post&amp;rsquo; para visualizar todos os posts.</description>
+      <guid>https://www.example.com/contact/</guid>
+      <description> &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;last-name&amp;quot;&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;quot;last-name&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;E-Mail&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;quot;email&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;email&amp;quot; required&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;city&amp;quot;&amp;gt;City&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;quot;city&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;state&amp;quot;&amp;gt;State&amp;lt;/label&amp;gt; &amp;lt;select id=&amp;quot;state&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot;&amp;gt; &amp;lt;option&amp;gt;AL&amp;lt;/option&amp;gt; &amp;lt;option&amp;gt;CA&amp;lt;/option&amp;gt; &amp;lt;option&amp;gt;IL&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;fieldset class=&amp;quot;pure-group&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;A title&amp;quot;&amp;gt; &amp;lt;textarea class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;Your message&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;button type=&amp;quot;submit&amp;quot; class=&amp;quot;pure-button pure-button-primary&amp;quot;&amp;gt;Send&amp;lt;/button&amp;gt;  </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://twin-data-science.github.io/page/about/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <link>https://www.example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/page/about/</guid>
+      <guid>https://www.example.com/about/</guid>
       <description>This blog intends to share informative articles about our Data Science work, exploring interactions with different study fields and its impacts on economy, government and policy. Visit our Github!
 About the team Hugo Honda I am a mission-driven Data Scientist and Full Stack developer focused on Python and Javascript. Currently Technology Coordinator at Neoway Business Solutions.
  More About Me  Iúri Honda  PhD Economics - PUC Rio / Columbia University More  </description>

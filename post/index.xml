@@ -2,46 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on TwinDS</title>
-    <link>https://twin-data-science.github.io/post/</link>
+    <link>https://www.example.com/post/</link>
     <description>Recent content in Posts on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© TwinDS</copyright>
-    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://twin-data-science.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Visualizando Dados [Python]</title>
-      <link>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/post/20-07-03_python-data-visualization/</guid>
-      <description>Premissas para este post: Dê uma olhada neste post * sobre ferramentas para começar com Python
- A Visualização de Dados é a apresentação gráfica e um contexto visual para os padrões, informações e correlações que analisamos. Existem excelentes pacotes gráficos para Python (pandas Visualization, Matplotlib, Seaborn &amp;hellip;)
-Os dados em seu formato bruto, tem pouca utilidade ao consumidor final da informação. A imagem a seguir mostra um conjunto de dados sobre séries e filmes em seu formato bruto:</description>
-    </item>
     
     <item>
-      <title>Ajeitando sua máquina [Python]</title>
-      <link>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</link>
+      <title>Ajeitando sua máquina - Python</title>
+      <link>https://www.example.com/post/21-01-20-prerequisites-python/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/post/20-07-02_python-prerequisites/</guid>
-      <description>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
-    </item>
-    
-    <item>
-      <title>Contribuindo com o blog</title>
-      <link>https://twin-data-science.github.io/post/20-07-01_contributing/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/post/20-07-01_contributing/</guid>
-      <description>Premissas para este post: se você não tem acesso ao repositório de desenvolvimento, você ainda não tem privilégios para contribuir. Você pode solicitar esta permissão diretamente aos autores.
- Para escrever um post no blog, siga os passos a seguir:
-  Atualize o repositório:
- Se for a primeira vez, clone o respositório de desenvolvimento do blog https://github.com/twin-data-science/twin-data-science.dev.git Depois disso execute para ter certeza que os posts estarão atualizados:  $ git pull origin master   Abra a pasta &amp;lsquo;/content/post&amp;rsquo; para visualizar todos os posts.</description>
+      <guid>https://www.example.com/post/21-01-20-prerequisites-python/</guid>
+      <description>$$ \sum_{i=1}^{N} a_i $$
+Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</description>
     </item>
     
   </channel>
