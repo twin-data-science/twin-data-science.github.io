@@ -38,7 +38,15 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>  
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
  
   
@@ -47,8 +55,8 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/lioshi.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   
   <script>hljs.initHighlightingOnLoad();</script>
   
@@ -229,7 +237,7 @@
     
       <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/estat%C3%ADstica">Estatística</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/finan%C3%A7as">Finanças</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/econometria">Econometria</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/r">R</a>
     

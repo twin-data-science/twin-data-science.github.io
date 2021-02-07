@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Econometria on TwinDS</title>
+    <link>https://twin-data-science.github.io/tags/econometria/</link>
+    <description>Recent content in Econometria on TwinDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://twin-data-science.github.io/tags/econometria/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introdução à Simulação de Monte Carlo com R</title>
+      <link>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</guid>
+      <description>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste post, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).</description>
+    </item>
+    
+  </channel>
+</rss>
