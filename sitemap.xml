@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://twin-data-science.github.io/tags/development/</loc>
+    <loc>https://twin-data-science.github.io/tags/estat%C3%ADstica/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/post/2021-02-05-introducao_aprecamento_1/</loc>
+    <loc>https://twin-data-science.github.io/tags/finan%C3%A7as/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://twin-data-science.github.io/tags/python/</loc>
+    <loc>https://twin-data-science.github.io/tags/r/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,6 +39,16 @@
   
   <url>
     <loc>https://twin-data-science.github.io/post/2021-01-20-ajeitando_sua_maquina_python/</loc>
+    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/tags/development/</loc>
+    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twin-data-science.github.io/tags/python/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url>
   
