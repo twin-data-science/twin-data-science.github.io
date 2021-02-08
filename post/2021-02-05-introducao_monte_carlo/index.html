@@ -83,7 +83,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://twin-data-science.github.io/">Inicial</a>
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/">Início</a>
       
         </li>
       
@@ -358,26 +358,20 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
 
 <span style="color:#75715e"># Para ver como os estimadores se comportam ao longo das simulações, </span>
 <span style="color:#75715e"># criamos uma linha vermelha que indica o valor verdadeiro do beta</span>
-</code></pre></div>
+</code></pre></div><figure>
+    <img src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta1_1.jpeg#center"
+         alt="legenda" height="400"/> <figcaption>
+            <p>legenda</p>
+        </figcaption>
+</figure>
 
+<figure>
+    <img src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta1_2.jpeg#center"
+         alt="legenda" height="400"/> <figcaption>
+            <p>legenda</p>
+        </figcaption>
+</figure>
 
-<div class="image-center">
-  <img
-    src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta1_1.jpeg"
-    alt=""
-    decoding="async"
-  />
-</div>
-
-
-
-<div class="image-center">
-  <img
-    src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta1_2.jpeg"
-    alt=""
-    decoding="async"
-  />
-</div>
 <h3 id="segunda-simulação-incondicional">Segunda Simulação (Incondicional)</h3>
 <p>Em um exercício semelhante ao anterior, vamos rodar mais uma vez o Monte Carlo, agora para calcular a distribuição incondicinoal da estatística-t. Utilizando a mesma estrutura definida anteriormente, vamos zerar o contador e as matrizes para essa nova simulação:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
@@ -460,26 +454,20 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
 <span style="color:#a6e22e">abline</span>(h<span style="color:#f92672">=</span><span style="color:#ae81ff">.5</span>,lty <span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
 
 <span style="color:#75715e"># Mais uma vez, a linha vermelha indica o valor verdadeiro do beta</span>
-</code></pre></div>
+</code></pre></div><figure>
+    <img src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta2_1.jpeg#center"
+         alt="legenda" height="400"/> <figcaption>
+            <p>legenda</p>
+        </figcaption>
+</figure>
 
+<figure>
+    <img src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta2_2.jpeg#center"
+         alt="legenda" height="400"/> <figcaption>
+            <p>legenda</p>
+        </figcaption>
+</figure>
 
-<div class="image-center">
-  <img
-    src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta2_1.jpeg"
-    alt=""
-    decoding="async"
-  />
-</div>
-
-
-
-<div class="image-center">
-  <img
-    src="https://twin-data-science.github.io/2021-02-05/2021-02-05-introducao_monte_carlo_avebeta2_2.jpeg"
-    alt=""
-    decoding="async"
-  />
-</div>
 <h2 id="conclusão">Conclusão</h2>
 <p>O método de Monte Carlo é uma ferramenta poderosa para simular um grande número de amostras de um determinado modelo para estudar a distribuição de amostras finitas de estimadores. Ao longo deste <em>post</em>, atribuímos um valor aleatório à variável sobre a qual existe incerteza e em seguida executamos o modelo desejado. Repetimos este processo diversas vezes, atribuindo valores diferentes à variável em questão. Uma vez que a simulação é concluída, calculamos a média dos resultados, obtendo assim uma estimativa para os parâmetros desejados. Embora essa seja uma aplicação introdutória, pode ser facilmente expandida e adaptada para outros casos.</p>
 <h3 id="referências-bibliográficas">Referências Bibliográficas</h3>
