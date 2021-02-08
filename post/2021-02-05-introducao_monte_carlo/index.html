@@ -237,8 +237,8 @@
 
 </div>
 
-  <p>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste post, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).</p>
-<p>Sabemos que o estimador de Mínimos Quadrados Ordinários (MQO) $\hat{\pmb{\beta}}$ é uma função da amostra aleatória $(\mathbf{y},\mathbf{X})$. Suponha então, que fixemos $\mathbf{X}$ e calculemos $\hat{\pmb{\beta}}$ para todas as possíveis realizações de $\mathbf{y}$. Essa média condicional será a média populacional $E(\hat{\pmb{\beta}}|\mathbf{X}) = \pmb{\beta}$ caso não exista viés. O objetivo deste exercício é explicitar este resultado através do método de Monte Carlo.</p>
+  <p>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos do conhecimento como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste <em>post</em>, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).</p>
+<p>Sabemos que o estimador de Mínimos Quadrados Ordinários (MQO) $\hat{\pmb{\beta}}$ é uma função da amostra aleatória $(\mathbf{y},\mathbf{X})$. Suponha então, que fixemos $\mathbf{X}$ e calculemos $\hat{\pmb{\beta}}$ para todas as possíveis realizações de $\mathbf{y}$. Essa média condicional será a média populacional $E(\hat{\pmb{\beta}}|\mathbf{X}) = \pmb{\beta}$ caso não exista viés. <strong>O objetivo deste exercício é explicitar este resultado através do método de Monte Carlo</strong>.</p>
 <h2 id="preparando-o-modelo-com-r">Preparando o modelo com R</h2>
 <p>Antes de mais nada, vamos fixar um <em>seed</em> para que nossos resultados sejam replicáveis e definiremos o número de observações para nossa amostra:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">99</span>)
@@ -248,8 +248,9 @@ n <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
 <p>$$ \mathbf{y} = \mathbf{X} \pmb{\beta} + \pmb{\varepsilon}$$</p>
 <p>com parâmetros do modelo tais que $(\beta_1,\beta_2,\sigma^2) = (1, 0.5, 1)$ e ${\varepsilon_i} \sim N(0,1)$ <em>i.i.d.</em> A distribuição da variável explicativa $\mathbf{x} = (x_1,x_2,&hellip;,x_n)&lsquo;$ será especificada por um processo AR(1):</p>
 <p>$$x_i = c + \phi x_{i-1} + \eta_i, \hspace{10mm} i=1,2,&hellip;,n$$</p>
-<p>de forma que, ao resolvermos a equação da diferença de primeira ordem, temos $x_i = \phi^ix_0 + \sum_{k=1}^i \phi^{k-1} c + \sum_{k=1}^{i} \phi^{i-k}\eta_k$, para ${\eta_i} \sim N(0,1)$ *i.i.d.* e $x_0$ com distribuição:</p>
+<p>de forma que, ao resolvermos a equação recursiva da diferença de primeira ordem, temos $x_i = \phi^ix_0 + \sum_{k=1}^i \phi^{k-1} c + \sum_{k=1}^{i} \phi^{i-k}\eta_k$, para ${\eta_i} \sim N(0,1)$ *i.i.d.* e $x_0$ com distribuição:</p>
 <p>$$ x_0 \sim N\Bigg( \frac{c}{1-\phi} , \frac{1}{1-\phi^2} \Bigg), \hspace{5mm} c = 2, \hspace{2mm}\phi = 0.6 $$</p>
+<p><em>(Não vamos mostrar aqui como derivar a a equação recursiva que define o nosso processo AR(1), nem a distribuição marginal para um modelo estacionário derivado dela. Ainda assim, é sempre útil tentar entender de onde vêm estes resultados).</em></p>
 <p>Podemos então atribuir os valores dos parâmetros:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">beta1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 beta2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
@@ -259,6 +260,7 @@ c <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
 phi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.6</span>
 </code></pre></div><p>A partir da forma funcional acima, vamos reescrever a equação de $x_i$ de maneira matricial:</p>
 <p>$$\mathbf{x} = \mathbf{r}\cdot x_0 + \mathbf{d} + \mathbf{A}\cdot \pmb{\eta}$$</p>
+<p><em>(Vale a pena colocar no papel a equação recursiva derivada anteriormente e tentar escrevê-la de forma matricial).</em></p>
 <p>Podemos assim criar $\mathbf{r}$, $\mathbf{d}$ e $\mathbf{A}$ no R:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e"># Vetor r = (phi^1,phi^2,...,phi^n)&#39; que multiplica a observação inicial x0</span>
 r <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(phi, n)
@@ -273,7 +275,7 @@ A <span style="color:#f92672">=</span> <span style="color:#a6e22e">diag</span>(n
 <span style="color:#75715e"># Vetor d = (d1 d2 ... dn)&#39; que carrega o intercepto do AR(1)</span>
 <span style="color:#75715e"># onde d1 = c; d2 = (1+phi)*c; ... ; di = (1+phi+phi^2+...+phi^(i-1))*c</span>
 d <span style="color:#f92672">=</span> <span style="color:#a6e22e">cumsum</span>(A[,<span style="color:#ae81ff">1</span>])<span style="color:#f92672">*</span>c <span style="color:#75715e"># Vamos aproveitar a estrutura de A para construir d</span>
-</code></pre></div><p>Perceba que ainda não geramos $x_0$ e $\pmb{\eta}$, embora conhecemos as suas distribuições, que será uma etapa fundamental do exercício a seguir. Agora vamos ao que interessa: as simulações.</p>
+</code></pre></div><p>Perceba que ainda não geramos $x_0$ e $\pmb{\eta}$, embora conheçamos as suas distribuições, etapa fundamental do exercício a seguir. Agora vamos ao que interessa: as simulações.</p>
 <h2 id="rodando-as-simulações-de-monte-carlo-com-r">Rodando as simulações de Monte Carlo com R</h2>
 <p>Seguindo Hayashi (2000), faremos duas simulações diferentes. Na primeira, vamos calcular $E(\hat{\pmb{\beta}}|\mathbf{X})$ e a distribuição da estatística-t condicionais a $\mathbf{X}$. Na segunda, faremos de maneira incondicional.</p>
 <h3 id="primeira-simulação-condicional">Primeira Simulação (Condicional)</h3>
@@ -284,12 +286,14 @@ x_0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">rnorm</span
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e"># Utilizamos aqui %*% para multiplicação matricial</span>
 
 x <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.matrix</span>(r) <span style="color:#f92672">%*%</span> x_0 <span style="color:#f92672">+</span> <span style="color:#a6e22e">as.matrix</span>(d) <span style="color:#f92672">+</span> A <span style="color:#f92672">%*%</span> <span style="color:#a6e22e">as.matrix</span>(eta)
-</code></pre></div><p>Vamos determinar agora um contador que vai registrar a frequência com a qual $|t|&gt;t_{0.025}(n-2)$ e uma matriz para armazenar a média do nosso estimador de $\hat{\pmb{\beta}} = (\hat{\beta_1},\hat{\beta_2})&lsquo;$:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">b <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)
+</code></pre></div><p>Vamos iniciar agora um contador que vai registrar a frequência com a qual $|t|&gt;t_{0.025}(n-2)$ e uma matriz para armazenar a média do nosso estimador de $\hat{\pmb{\beta}} = (\hat{\beta_1},\hat{\beta_2})&lsquo;$:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+b <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)
 <span style="color:#a6e22e">colnames</span>(b) <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;beta1&#34;</span>,<span style="color:#e6db74">&#34;beta2&#34;</span>)
 </code></pre></div><p>Queremos construir um <em>loop</em> para rodar as simulações. Antes disso, defina o número de simulações (faremos 50.000) e crie também uma matriz para armazenar os valores médios de $\hat{\pmb{\beta}}$ para cada simulação:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">nsim <span style="color:#f92672">=</span> <span style="color:#ae81ff">50000</span> 
-<span style="color:#75715e"># Experimente também rodar com mais ou menos simulações e compare os resultados</span>
+<span style="color:#75715e"># Experimente rodar mais ou menos simulações e compare os resultados</span>
 
 B <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#ae81ff">0</span>,nsim,<span style="color:#ae81ff">2</span>)
 <span style="color:#a6e22e">colnames</span>(B) <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;beta1m&#34;</span>,<span style="color:#e6db74">&#34;beta2m&#34;</span>)
@@ -323,7 +327,7 @@ h0 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
   <span style="color:#75715e"># estatística-t</span>
   tstat1 <span style="color:#f92672">=</span> (s1<span style="color:#f92672">$</span>coefficients[2] <span style="color:#f92672">-</span> h0)<span style="color:#f92672">/</span>(<span style="color:#a6e22e">summary</span>(s1)<span style="color:#f92672">$</span>coefficients[2,<span style="color:#e6db74">&#34;Std. Error&#34;</span>])
 
-  <span style="color:#75715e"># caso queira calcular o p-valor</span>
+  <span style="color:#75715e"># (caso queira computar também o p-valor)</span>
   <span style="color:#75715e"># pval1 = 2*pt(-abs(tstat1),df=(n-2))</span>
   
   <span style="color:#75715e"># atualizando as matrizes</span>
@@ -352,7 +356,7 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
 
 <span style="color:#f92672">&gt;</span> rejnull
 [1] <span style="color:#ae81ff">0.04912</span>
-</code></pre></div><p>Note que encontramos valores muito próximos daqueles determinados pelo modelo verdadeiro para os parâmetros $\hat{\pmb{\beta}} = (\hat{\beta_1},\hat{\beta_2})&lsquo;$. Além disso, a frequência de rejeição da hipótese verdadeira $H_0$ (erro tipo I) é arbitrariamente perto de $5%$.</p>
+</code></pre></div><p>Note que encontramos valores muito próximos daqueles determinados pelo modelo verdadeiro para os parâmetros $\hat{\pmb{\beta}} = (\hat{\beta_1},\hat{\beta_2})&lsquo;$. Além disso, a frequência de rejeição da hipótese verdadeira $H_0$ (erro tipo I) está arbitrariamente próxima de 5%.</p>
 <p>Podemos ainda plotar os estimadores $(\hat{\beta_1},\hat{\beta_2})&lsquo;$ médios, utilizando os dados que armazenamos no <em>loop</em>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">plot</span>(B[,<span style="color:#ae81ff">1</span>],t<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average Beta 1&#34;</span>,
      xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Simulations&#34;</span>,ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Beta 1&#34;</span>)
@@ -363,7 +367,7 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
 <span style="color:#a6e22e">abline</span>(h<span style="color:#f92672">=</span><span style="color:#ae81ff">.5</span>,lty <span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
 
 <span style="color:#75715e"># Para ver como os estimadores se comportam ao longo das simulações, </span>
-<span style="color:#75715e"># criamos uma linha vermelha com o valor verdadeiro do beta</span>
+<span style="color:#75715e"># criamos uma linha vermelha que indica o valor verdadeiro do beta</span>
 </code></pre></div>
 
 
@@ -385,7 +389,7 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
   />
 </div>
 <h3 id="segunda-simulação-incondicional">Segunda Simulação (Incondicional)</h3>
-<p>Em um exercício semelhante ao anterior, vamos rodar mais uma simulação de Monte Carlo, agora para calcular a distribuição incondicinoal da estatística-t. Utilizando a mesma estrutura definida anteriormente, vamos zerar o contador e as matrizes para essa nova simulação:</p>
+<p>Em um exercício semelhante ao anterior, vamos rodar mais uma vez o Monte Carlo, agora para calcular a distribuição incondicinoal da estatística-t. Utilizando a mesma estrutura definida anteriormente, vamos zerar o contador e as matrizes para essa nova simulação:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 
 b <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)
@@ -465,7 +469,7 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
      xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Simulations&#34;</span>,ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Beta 2&#34;</span>)
 <span style="color:#a6e22e">abline</span>(h<span style="color:#f92672">=</span><span style="color:#ae81ff">.5</span>,lty <span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
 
-<span style="color:#75715e"># Mais uma vez, a linha vermelha atribui o valor verdadeiro do beta</span>
+<span style="color:#75715e"># Mais uma vez, a linha vermelha indica o valor verdadeiro do beta</span>
 </code></pre></div>
 
 

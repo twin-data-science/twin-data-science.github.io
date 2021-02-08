@@ -239,23 +239,15 @@
 <p>Por estes motivos e vários outros, a maioria dos posts sobre ciência de dados deste blog serão em Python. Para executá-los, você vai precisar de algumas configurações e ferramentas importantes instaladas e funcionando na sua máquina para começarmos a desenvolver. A seguir estão descritos os primeiros passos:</p>
 <h3 id="utilize-uma-interface-para-linha-de-comando">Utilize uma interface para Linha de Comando</h3>
 <p>Para desenvolver em Python (ou qualquer outra linguagem), você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
-<blockquote>
 <p>Obs: Para padronizar, chamarei sempre de Terminal. Você também poderá encontrar escrito como: Interface de Linha de Comando; Command Line Interface (CLI); Console; Prompt de Comando.</p>
-</blockquote>
 <h3 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h3>
 <p>Uma boa dica é manter seus diretórios de desenvolvimento isolados das demais no seu computador. Gosto de criar uma pasta chamada &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux / Windows, abra seu terminal e execute o comando para localizar o diretório raíz:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd ~/
-</code></pre></div><blockquote>
-<p>A caixinha acima significa que estou demonstrando um comando ou trecho de código. Caso comece o símbolo &lsquo;$&rsquo;, significa que estou descrevendo um comando no terminal (caso for copiar e colar para o seu terminal, ignore o &lsquo;$ ' e copie apenas o resto).</p>
-</blockquote>
-<p>Em seguida execute:</p>
+</code></pre></div><p>Em seguida execute:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir Developer
-</code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outras pastas como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
+</code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outros locais como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd Developer
 </code></pre></div><p>desta forma, o diretório de trabalho será agora &lsquo;Developer&rsquo;. Lá dentro você pode criar mais sub-pastas para novos projetos (exemplo: <code>$ mkdir new-project</code>) e acessar estes novos diretórios (exemplo: <code>$ cd new-project</code>).</p>
-<blockquote>
-<p>Obs: Para padronizar, tentarei chamar de diretório (conhecido popularmente como &lsquo;pasta&rsquo;).</p>
-</blockquote>
 <h3 id="instale-o-python">Instale o Python</h3>
 <p>Execute o seguinte comando para verificar se você já tem Python 3 instalado na sua máquina:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ python3 --version
@@ -282,8 +274,8 @@ Se você tiver o Homebrew instalado, execute:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew cask install vscodium
 </code></pre></div><p>Também é possível ter uma experiência semelhante ao Jupyer no VSCodium / VSCode, já que há suporte para arquivos &ldquo;*.ipynb&rdquo; e que gera uma visualização de Notebook no editor de texto.</p>
 <h3 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h3>
-<p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções deste <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">link</a>.</p>
-<p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>). Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
+<p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções <a href="https://github.com/ohmyzsh/ohmyzsh/blob/master/README.md">deste link</a>.</p>
+<p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>) - adicione estas linhas ao fim do seu arquivo &ldquo;~/.zshrc&rdquo;. Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
 
 
   

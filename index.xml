@@ -17,7 +17,7 @@
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</guid>
-      <description>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste post, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).</description>
+      <description>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos do conhecimento como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão.</description>
     </item>
     
     <item>
