@@ -225,10 +225,10 @@
 
   <p>Python é uma das linguagens de programação favoritas para ciência de dados, aprendizado de máquina e processamento de linguagem natural. A linguagem é muito popular por sua fácil sintaxe, ela é simples de aprender e utilizar. Suas bibliotecas, módulos e frameworks são amplamente conhecidos, apoiados e mantidos por corporações renomadas. É uma linguagem versátil, que pode ser utilizada em praticamente qualquer ambiente, para a solução e automação de diferentes tarefas.</p>
 <p>Por estes motivos e vários outros, a maioria dos posts sobre ciência de dados deste blog serão em Python. Para executá-los, você vai precisar de algumas configurações e ferramentas importantes instaladas e funcionando na sua máquina para começarmos a desenvolver. A seguir estão descritos os primeiros passos:</p>
-<h3 id="utilize-uma-interface-para-linha-de-comando">Utilize uma interface para Linha de Comando</h3>
+<h2 id="utilize-uma-interface-para-linha-de-comando">Utilize uma interface para Linha de Comando</h2>
 <p>Para desenvolver em Python (ou qualquer outra linguagem), você vai precisar acessar sua interface com a linha comando da sua máquina. Caso utilize macOS / linux, abra a aplicação Terminal. Se você é usuário de windows, abra o prompt de comando (&lsquo;Command Prompt&rsquo;).</p>
 <p>Obs: Para padronizar, normalmente chamarei de Terminal. Você também poderá encontrar escrito como: &ldquo;Interface de Linha de Comando; Command Line Interface (CLI); Console; Prompt de Comando&rdquo;.</p>
-<h3 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h3>
+<h2 id="crie-um-diretório-de-desenvolvimento">Crie um diretório de desenvolvimento</h2>
 <p>Uma boa dica é manter seus diretórios de desenvolvimento isolados no seu computador. Gosto de criar uma pasta chamada &ldquo;Developer&rdquo; no diretório raíz do meu computador, para que os códigos fiquem em um local centralizado. Para fazer isso no macOS / linux, abra seu terminal e execute o comando para localizar o diretório raíz:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd ~/
 </code></pre></div><p>Em seguida execute:</p>
@@ -236,7 +236,7 @@
 </code></pre></div><p>Este comando vai criar um novo diretório chamada Developer (geralmente lado a lado de outros locais como &ldquo;Desktop&rdquo; / &ldquo;Documents&rdquo; / &ldquo;Pictures&rdquo; / &ldquo;Music&rdquo; / etc.). Para acessar esta pasta pelo terminal, a partir do diretório raíz e execute:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd Developer
 </code></pre></div><p>desta forma, o diretório de trabalho será agora &lsquo;Developer&rsquo;. Lá dentro você pode criar mais sub-pastas para novos projetos (exemplo: <code>$ mkdir new-project</code>) e acessar estes novos diretórios (exemplo: <code>$ cd new-project</code>).</p>
-<h3 id="instale-o-python">Instale o Python</h3>
+<h2 id="instale-o-python">Instale o Python</h2>
 <p>Execute o seguinte comando para verificar se você já tem Python 3 instalado na sua máquina:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ python3 --version
 </code></pre></div><p>Se não estiver instalado, utilize as instruções retornadas pelo comando acima ou siga as instruções do <a href="https://wiki.python.org/moin/BeginnersGuide/Download">site oficial</a>. Use o Python 3.x, que é a versão com suporte e em desenvolvimento ativos (por mais que o Python 2.x possa vir na sua máquina).</p>
@@ -245,7 +245,7 @@
 <p>Os pacotes (e bibliotecas) Python, são um conjunto de funções úteis &ldquo;empacotados&rdquo;, sendo que cada pacote terá sua finalidade particular. Ao importar um pacote, você terá acesso às respectivas funções que alguém já implementou por nós. Por exemplo, posso utilizar um pacote de visualização (como o <a href="https://matplotlib.org/index.html">Matplotlib</a>) para não ter que reescrever do zero todas as funções de plotagem de gráficos, conseguindo assim apresentar um gráfico de pizza chamando uma simples função.</p>
 <p>A maioria das distribuições do Python vem com o gerenciador de pacotes pip pré-instalado, você pode checar sua existência executando o comando <code>$ pip3 --version</code>. Caso não esteja instalado, <a href="https://pip.pypa.io/en/latest/installing/">instale o pip</a> para gerenciar suas bibliotecas Python.</p>
 <p>Assim como o comando <code>$ python</code>, apenas <code>$ pip</code> instala pacotes Python 2, portanto utilize <code>$ pip3</code> para o Python 3. O pip torna a instalação de pacotes Python muito mais simples e organizada. Você já pode testá-lo na próxima seção, instalando o Jupyter.</p>
-<h3 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h3>
+<h2 id="jupyter-notebook--jupyterlab">Jupyter Notebook / JupyterLab</h2>
 <p>Outra ferramenta muito utilizada para Ciência de Dados é o Jupyter Notebook. Esta ferramenta viabiliza a combinação de código executável em tempo real, textos descritivos (Markdown) e outras visualizações interativas, em um documento com a extensão &ldquo;<em>.ipynb&rdquo;.
 Também é possível ter uma experiência semelhante ao Jupyer no VSCodium / VSCode, já que há suporte para arquivos &ldquo;</em>.ipynb&rdquo; e que gera uma visualização de Notebook no editor de texto. Você pode pular para a próxima seção se quiser fazer tudo no editor de texto.</p>
 <p><a href="https://jupyter.org/install">Para instalar o Jupyter</a>, utilize o seguinte comando:</p>
@@ -258,9 +258,9 @@ Também é possível ter uma experiência semelhante ao Jupyer no VSCodium / VSC
 O Jupyter abrirá uma nova aba com um novo arquivo chamado &ldquo;Untitled.ipynb&rdquo;
 A partir deste Notebook você pode começar a programar. Você também pode gerar documentação em <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> (texto sem programação) em células, alterando o tipo da célula.
 Você pode renomear seu Notebook e salvar seu progresso (símbolo de disquete na aba aberta). Para encerrar sua execução, salve seu progresso e utilize o atalho Ctrl + Z no Windows ou Ctrl + D no macOS / linux.</p>
-<h3 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h3>
+<h2 id="escolha-um-bom-editor-de-texto">Escolha um bom Editor de Texto</h2>
 <p>Gosto de usar <a href="https://vscodium.com/">VSCodium</a>, a versão Free/Libre Open Source Software do editor de texto da Microsoft, <a href="https://code.visualstudio.com/">VSCode</a> (o código fonte do vscode contém telemetria/rastreamento). Se não se importar, você também pode usar o VSCode ou qualquer outro editor de texto de sua preferência (<a href="https://atom.io/">Atom</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, etc.).</p>
-<h3 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h3>
+<h2 id="um-pouco-mais-avaçado">Um pouco mais avaçado</h2>
 <p>Se você já se sente confortável utilizando o terminal no macOS / linux, recomendo dar um upgrade no visual e usabilidade dele com o <a href="https://ohmyz.sh/">Oh My Zsh</a>, utilize a instruções <a href="https://github.com/ohmyzsh/ohmyzsh/blob/master/README.md">deste link</a>.</p>
 <p>Também é possível criar um alias para python3 (<code>alias python=&quot;python3&quot;</code>) e pip3 (<code>alias pip=&quot;pip3&quot;</code>) - adicione estas linhas ao fim do seu arquivo &ldquo;~/.zshrc&rdquo;. Desta forma você não vai precisar digitar o &lsquo;3&rsquo; ao final de cada um dos comandos.</p>
 
@@ -279,13 +279,13 @@ Você pode renomear seu Notebook e salvar seu progresso (símbolo de disquete na
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/">Introdução à Simulação de Monte Carlo com R</a>
+      <a href="https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/">Simulando um Movimento Browniano com R</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

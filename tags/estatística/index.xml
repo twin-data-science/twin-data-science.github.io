@@ -20,5 +20,16 @@
       <description>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos do conhecimento como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão.</description>
     </item>
     
+    <item>
+      <title>Simulando um Movimento Browniano com R</title>
+      <link>https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/</guid>
+      <description>O chamado Movimento Browniano é um processo estocástico utilizado como building block básico de modelos mais complexos que permitem a representação de variáveis aleatórias em tempo contínuo. Cochrane (2005), introduz o movimento browniano como a generalização natural de um passeio aleatório em tempo discreto. Defina primeiramente uma série de choques $\varepsilon_t$ em tempo discreto, de forma que um passeio aleatório será:
+$$x_t = x_{t-1} + \varepsilon_t$$
+A interpretação da fórmula acima é a seguinte: a variável $x_t$ marca a posição do passeio aleatório no tempo $t$.</description>
+    </item>
+    
   </channel>
 </rss>

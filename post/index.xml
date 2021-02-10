@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>Simulando um Movimento Browniano com R</title>
+      <link>https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/2021-02-09-simulando_movimento_browniano/</guid>
+      <description>O chamado Movimento Browniano é um processo estocástico utilizado como building block básico de modelos mais complexos que permitem a representação de variáveis aleatórias em tempo contínuo. Cochrane (2005), introduz o movimento browniano como a generalização natural de um passeio aleatório em tempo discreto. Defina primeiramente uma série de choques $\varepsilon_t$ em tempo discreto, de forma que um passeio aleatório será:
+$$x_t = x_{t-1} + \varepsilon_t$$
+A interpretação da fórmula acima é a seguinte: a variável $x_t$ marca a posição do passeio aleatório no tempo $t$.</description>
+    </item>
+    
+    <item>
       <title>Ajeitando sua máquina - Python</title>
       <link>https://twin-data-science.github.io/post/2021-01-20-ajeitando_sua_maquina_python/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
