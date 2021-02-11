@@ -272,14 +272,14 @@ x <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</s
         </figcaption>
 </figure>
 
-<h2 id="uma-aplicação-em-finanças">Uma aplicação em Finanças</h2>
-<p>Mas como podemos inserir esse exercício no arcabouço de Finanças? Pense por exemplo que estamos analisando preços intradiários e que queremos analisar retornos em alta frequência. Seguindo Corsi (2009), se tomamos $p(t)$ como o log do preço no dia $t$, defina o i-ésimo retorno intradiário em $t$ como:</p>
-<p>$$r_{t-j\cdot \Delta} = p(t-j\cdot \Delta) - p(t-(j+1)\cdot \Delta)$$</p>
-<p>em que $\Delta = 1/K$. Note que $r_{t-j\cdot \Delta}$ serão os retornos intradiários calculados no intervalo de tempo $\Delta$.</p>
+<h2 id="movimento-browniano-geométrico">Movimento Browniano Geométrico</h2>
+<p>Vamos dar um passo adiante e introduzir o chamado movimento browniano geométrico, no qual um processo estocástico em tempo contínuo $S_t$ satisfaz:</p>
+<p>$$dS_t = \mu S_t dt + \sigma S_t dB_t$$</p>
+<p>onde $B_t$ é um movimento browniano, $\mu$ é um <em>drift</em> e $\sigma$ a volatilidade instantânea.</p>
+<p><a href="https://srdas.github.io/MLBook/FinanceModels.html">https://srdas.github.io/MLBook/FinanceModels.html</a></p>
 <h2 id="conclusão">Conclusão</h2>
 <h3 id="referências-bibliográficas">Referências Bibliográficas</h3>
 <p>Cochrane, J. H. (2005): <em>Asset Pricing, Revised Edition</em>. Princeton University Press.</p>
-<p>Corsi, F. (2009): A Simple Approximate Long-Memory Model of Realized Volatility. Journal of Financial Econometrics, 7 (2), 174–196. [1519,1534,1536]</p>
 
 
   

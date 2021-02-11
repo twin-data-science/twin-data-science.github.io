@@ -32,23 +32,26 @@
   <link rel="stylesheet" href="https://twin-data-science.github.io/css/blackburn.css">
 
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
   
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>  
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
  
   
-  <link rel="alternate" type="application/rss+xml" title="TwinDS"
-    href='https://twin-data-science.github.io/tags/finan%C3%A7as/index.xml' />
-  
-
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   
   <script>hljs.initHighlightingOnLoad();</script>
   
@@ -80,7 +83,7 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://twin-data-science.github.io/">Inicial</a>
+          <a class="pure-menu-link" href="https://twin-data-science.github.io/">Início</a>
       
         </li>
       
@@ -93,12 +96,6 @@
       
         <li class="pure-menu-item">
           <a class="pure-menu-link" href="https://twin-data-science.github.io/about/">Sobre</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://twin-data-science.github.io/contact/">Contato</a>
       
         </li>
       
@@ -154,10 +151,6 @@
     
 
     
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/hugohonda" rel="me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
-    </li>
-    
 
     
 
@@ -207,7 +200,7 @@
   
     <article>
   <header>
-    <h2><a href="https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/">Introdução à Simulação de Monte Carlo com R</a></h2>
+    <h2><a href="https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/">Modelando Volatilidade com R - Modelos ARCH e GARCH</a></h2>
 
     <div class="post-meta">
 
@@ -226,7 +219,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/estat%C3%ADstica">Estatística</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/econometria">Econometria</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="https://twin-data-science.github.io/tags/finan%C3%A7as">Finanças</a>&nbsp;&#47;
     
@@ -241,12 +234,13 @@
   </header>
 
   <p>
-  O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste post, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).
+  Analisando retornos Vamos começar instalando os pacotes tidyquantpara análise financeira e astsapara análise de séries de tempo. Em seguida, importaremos a série de preços das ações da Amazon entre janeiro de 2010 e janeiro de 2021. Embora os dados obtidos sejam diários, vamos transformar em dados semanais e calcular os retornos a partir do adjusted closing price.
+#install.packages(&#34;tidyquant&#34;) #install.packages(&#34;astsa&#34;) library(tidyquant) library(astsa) getSymbols(&#34;AMZN&#34;, from = &#39;2010-01-01&#39;, to = &#34;2021-01-01&#34;,warnings = FALSE, auto.
   </p>
 
   
   <footer>
-    <a href="https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/">Continuar lendo<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/">Continuar lendo<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>

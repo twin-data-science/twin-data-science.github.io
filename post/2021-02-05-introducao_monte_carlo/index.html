@@ -250,7 +250,7 @@ c <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
 phi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.6</span>
 </code></pre></div><p>A partir da forma funcional acima, vamos reescrever a equação de $x_i$ de maneira matricial:</p>
 <p>$$\mathbf{x} = \mathbf{r}\cdot x_0 + \mathbf{d} + \mathbf{A}\cdot \pmb{\eta}$$</p>
-<p><em>(Vale a pena colocar no papel a equação recursiva derivada anteriormente e tentar escrevê-la de forma matricial).</em></p>
+<p><em>(Vale a pena colocar no papel a equação recursiva derivada anteriormente e tentar escrevê-la na sua forma matricial).</em></p>
 <p>Podemos assim criar $\mathbf{r}$, $\mathbf{d}$ e $\mathbf{A}$ no R:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e"># Vetor r = (phi^1,phi^2,...,phi^n)&#39; que multiplica a observação inicial x0</span>
 r <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(phi, n)
@@ -493,8 +493,14 @@ rejnull <span style="color:#f92672">=</span> counter<span style="color:#f92672">
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/">Modelando Volatilidade com R - Modelos ARCH e GARCH</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

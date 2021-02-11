@@ -6,10 +6,20 @@
     <description>Recent content on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modelando Volatilidade com R - Modelos ARCH e GARCH</title>
+      <link>https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/</guid>
+      <description>Analisando retornos Vamos começar instalando os pacotes tidyquantpara análise financeira e astsapara análise de séries de tempo. Em seguida, importaremos a série de preços das ações da Amazon entre janeiro de 2010 e janeiro de 2021. Embora os dados obtidos sejam diários, vamos transformar em dados semanais e calcular os retornos a partir do adjusted closing price.
+#install.packages(&amp;#34;tidyquant&amp;#34;) #install.packages(&amp;#34;astsa&amp;#34;) library(tidyquant) library(astsa) getSymbols(&amp;#34;AMZN&amp;#34;, from = &amp;#39;2010-01-01&amp;#39;, to = &amp;#34;2021-01-01&amp;#34;,warnings = FALSE, auto.</description>
+    </item>
     
     <item>
       <title>Introdução à Simulação de Monte Carlo com R</title>

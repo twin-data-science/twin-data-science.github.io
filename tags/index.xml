@@ -6,7 +6,7 @@
     <description>Recent content in Tags on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Econometria</title>
       <link>https://twin-data-science.github.io/tags/econometria/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/econometria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finanças</title>
+      <link>https://twin-data-science.github.io/tags/finan%C3%A7as/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/tags/finan%C3%A7as/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://twin-data-science.github.io/tags/r/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://twin-data-science.github.io/tags/r/</guid>
       <description></description>
     </item>
     
@@ -26,15 +44,6 @@
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://twin-data-science.github.io/tags/estat%C3%ADstica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://twin-data-science.github.io/tags/r/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://twin-data-science.github.io/tags/r/</guid>
       <description></description>
     </item>
     

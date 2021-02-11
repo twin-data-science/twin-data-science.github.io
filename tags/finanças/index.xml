@@ -6,18 +6,19 @@
     <description>Recent content in Finanças on TwinDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://twin-data-science.github.io/tags/finan%C3%A7as/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Introdução à Simulação de Monte Carlo com R</title>
-      <link>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Modelando Volatilidade com R - Modelos ARCH e GARCH</title>
+      <link>https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://twin-data-science.github.io/post/2021-02-05-introducao_monte_carlo/</guid>
-      <description>O método (ou simulação) de Monte Carlo é amplamente utilizado em diversos campos como forma de resolver problemas difíceis em detrimento de práticas matemáticas ou estatísticas padrão. Essencialmente, este método busca modelar a probabilidade de resultados diferentes em um processo que não pode ser facilmente previsto devido à intervenção de variáveis aleatórias. Em Finanças, é utilizada principalmente para entender o impacto do risco e da incerteza em modelos de previsão. Neste post, faremos uma aplicação simplificada do método de Monte Carlo, com base em um exercício proposto por Hayashi (2000).</description>
+      <guid>https://twin-data-science.github.io/post/2021-02-10-modelando_volatilidade_1/</guid>
+      <description>Analisando retornos Vamos começar instalando os pacotes tidyquantpara análise financeira e astsapara análise de séries de tempo. Em seguida, importaremos a série de preços das ações da Amazon entre janeiro de 2010 e janeiro de 2021. Embora os dados obtidos sejam diários, vamos transformar em dados semanais e calcular os retornos a partir do adjusted closing price.
+#install.packages(&amp;#34;tidyquant&amp;#34;) #install.packages(&amp;#34;astsa&amp;#34;) library(tidyquant) library(astsa) getSymbols(&amp;#34;AMZN&amp;#34;, from = &amp;#39;2010-01-01&amp;#39;, to = &amp;#34;2021-01-01&amp;#34;,warnings = FALSE, auto.</description>
     </item>
     
   </channel>
